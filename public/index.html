@@ -698,7 +698,7 @@
           <div id="elemte_feedebck" class="hidden form">
             <div class="elemeto_box_coment">
               <h2 id="title_coment" class="title">Envie seu feedback</h2>
-              <div id="feedbackForm">
+              <form id="feedbackForm" action="/send-email" method="post">
                 <input id="inputName" type="text" name="nome" placeholder="Seu nome completo:" required>
                 <input id="inputEmail" type="email" name="email" placeholder="Seu e-mail:" required>
                 <input id="inputTelefone" type="tel" name="telefone" placeholder="Seu telefone:" required>
@@ -706,7 +706,7 @@
                 <div class="btn-enviar">
                   <button id="send">ENVIAR</button>
                 </div>
-              </div>
+              </form>
             
             <div class="message"></div>
             </div>
@@ -714,7 +714,6 @@
         </section>
           </section>
           <script src="formulario_feedbak.js"></script>
-          <script src="./teste.js"></script>
           
 
       </div>
