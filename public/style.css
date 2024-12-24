@@ -1,0 +1,1119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  --fonsztitle-font-size: 4vh;
+ /* outline: 1px solid red; */
+}
+
+header,
+main,
+footer {
+  display: block;
+}
+
+body {
+  width: 100%;
+}
+
+/* ----------------------------menu descktop ------------------------- */
+
+.menu-ger{
+  padding: 40px 4%;
+  position: absolute;
+}
+
+.menu-ger >.con_menu{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: white;
+}
+
+.con_menu{
+ width: 90vw;
+}
+
+.menu-ger >.con_menu nav  ul{
+  list-style-type: none;
+}
+
+.menu-ger >.con_menu nav  ul li{
+  display: inline-block;
+  padding: 0% 4%;
+}
+
+.menu-ger >.con_menu nav  ul li a{
+  display: inline-block;
+  padding: 0% 4%;
+}
+
+.menu-ger >.con_menu nav  ul li a:hover{
+  color: #0056b3;
+}
+
+.logo_top {
+  height: 4vw;
+  width: auto;
+}
+
+.menu ul{
+  height: 1000px;
+  /* height: auto; */
+}
+
+.icon_bt{
+  width: 35px;
+  height: 35px;
+  fill: #ffffff;
+  display: none;
+}
+
+.video-container {
+  top: 0;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+#bt_minha_lig_desk button{
+  text-align: center; 
+  background-color: #3c3cb5;
+  color: white;
+  border-radius: 25px;
+  font-size: 1.0vw;
+  font-weight: bold;
+  width: 8vw;
+  padding: 6px 2px;
+  outline: none;
+  transition: transform 0.3s ease; 
+  border: none;
+}
+
+#bt_minha_lig_desk button:hover{
+  background-color: #020024;
+  transform: scale(1.1);
+}
+
+/* ----------------------------menu mobile ------------------------- */
+
+.menu_mobile{
+  display: flex; /* Para o espaçamento funcionar */
+  justify-content: flex-start; /* Espaça os elementos dentro do container */
+  flex-direction: column;
+  padding: 0;
+}
+
+.menu_mobile {
+  background-color: rgb(55, 47, 160);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 0;
+  overflow-y: auto; 
+  overflow: hidden;
+  transition: .2s;
+  font-weight: bold;
+}
+
+.bt_min_lig{
+  justify-content: center;
+  margin: 0 auto; /* Centraliza horizontalmente o botão */
+}
+
+.bt_min_lig button {
+  text-align: center;
+  background-color: #2bac52;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 50vw; 
+  padding: 8px 2px;
+  outline: none;
+  border: none; 
+  margin-top: 60vw;
+}
+
+.menu_mobile.abrir-menu{
+  width: 65%;
+}
+
+.menu_mobile.abrir-menu ~ .orveley-menu{
+  display: block;
+}
+
+.menu_mobile nav ul {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+
+.menu_mobile nav ul li {
+  position: relative; 
+  margin-bottom: 10px; 
+}
+
+.menu_mobile nav ul li a {
+  font-size: 20px;
+  padding: 20px 4%;
+  font-weight: 300;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.menu_mobile nav ul li a:hover {
+  color: #0056b3; 
+}
+
+.orveley-menu{
+  background-color: #0000009d;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  display: none;
+}
+
+/* ---------------------------- Trabalhe conosco ------------------------- */
+
+.tbr-corpo{
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Botão principal */
+/* #openFormBtn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+#openFormBtn:hover {
+  background-color: #45a049;
+} */
+
+/* Card invisível inicialmente */
+
+
+/* Fundo escurecido */
+#cardContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; /* Card inicialmente invisível */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  
+  
+}
+
+/* Estilo do card */
+.card-tbr {
+  background-color: #fff;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-tbr h2 {
+  margin-bottom: 10px;
+  color: #020024;
+  font-size: 2.8vh;
+}
+
+.tbr_imp label {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+  color: #020024;
+  font-size: 2vh;
+}
+
+.tbr_imp > input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+button#submitBtn {
+  margin-top: 10px;
+  padding: 6px;
+  background-color: #020024;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 80px;
+  
+ 
+  
+}
+
+button#submitBtn:hover {
+  background-color: #b3c233;
+}
+
+/* Botão de fechar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+
+/* ---------------------------- pagina principal ------------------------- */
+
+.man_page {
+  width: 84.8%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+/*--------------------------------logo serviso ------------------------------*/
+
+.img_service_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 3vw;
+  margin-top: 2vw;
+}
+
+.img_service_logo img {
+  width: 270px;
+  height: 145px;
+  max-width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img_service_logo img:hover {
+  transform: scale(1.06);
+}
+
+
+#titulo_serviços {
+  color: #3c3cb5;
+  font-size: 50px;
+  margin-top: 34px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* post introdução */
+
+.post_01_introdução {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+}
+
+#titulo_sobrenos {
+  color: #3c3cb5;
+  font-size: var(--fonsztitle-font-size);
+}
+
+.post_apresentação {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.img_apresentação {
+  height: 28vw;
+  width: 45vw;
+  justify-content: center;
+}
+
+.bot_introdução {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-wrap: bold;
+  gap: 10px;
+  flex: 0.8;
+}
+
+.cont_apresentação {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 10px;
+  flex: 0.8;
+}
+
+.texto {
+  display: none;
+  padding: 1vh 3vh;
+  text-align: justify;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.bot_expancivo_intro {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #3c3cb5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  align-items: center;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.bot_expancivo_intro:hover {
+  background-color: #020024;
+}
+
+/*------------------------------------ alemento azul -------------------------------*/
+
+.elemento_azul {
+  height: 500px;
+  margin: auto;
+  background: rgb(22,32,91);
+background: linear-gradient(34deg, rgba(22,32,91,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
+margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 50px;
+ 
+}
+
+.title_elemente{
+  color: white;
+  font-size: 24px;
+  padding-left: 0;
+}
+
+.organize-elemente{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.item-post{
+  display: flex;
+  
+}
+
+.text-post p {
+  color: white;
+  align-items: center;
+  font-size: 22px;
+  width: 150px;
+  margin-left: 15px;
+}
+
+.icon_post{
+  width: 100px;
+  height: auto;
+  fill: #ffffff;
+}
+
+.elemento {
+  height: 100%;
+  width: 90% background-color white;
+}
+
+
+/*--------------------------------serviços e produto ------------------------------*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+#inverte_01 {
+  flex-direction: row-reverse;
+}
+
+.midia_servisos {
+  height: 400px;
+  width: 50%;
+}
+
+.content-servc {
+  flex: 0.9;
+  text-align: left;
+  margin-top: 4vw;
+  
+}
+
+.content-servc h2 {
+  margin: 0 0 0px;
+  color: #3c3cb5;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+c.ontent-servc p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#title_srviço-01{
+  color: #C4FF4B ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-02{
+  color: #AB55FE ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-03{
+  color: #161E5C ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-04{
+  color: #FF821C ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-05{
+  color: #000000 ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+/*-------------------------------- Velocidade ideal ------------------------------*/
+
+.card-corpo {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #0b2d66; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.card-vide {
+  background: rgb(2,0,36);
+  background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
+   color: #fff;
+  padding: 20px;
+  padding-inline: 15vw;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-vide h2 {
+  font-size: 1.5em;
+  margin-bottom: 1px;
+}
+
+.meter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0;
+  position: relative;
+}
+
+.meter {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.meter-needle {
+  position: absolute;
+  width: 5px;
+  height: 50px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%) rotate(-45deg);
+  transform-origin: bottom center;
+  transition: transform 0.5s ease;
+}
+
+.speed-display {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.options label {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.slider-container {
+  margin-top: 20px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/*---------------------slider----------------------*/
+
+.fedebeck {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.org_slide {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#titulo_comentario {
+  color: #3c3cb5;
+  font-size: var(--fonsztitle-font-size);
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.org_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-top: 8px;
+}
+
+.slider {
+  position: relative;
+  width: 33%;
+  height: 18vw;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.slider:hover {
+  transform: scale(1.1);
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.img_slid {
+  height: auto;
+  width: 100%;
+}
+
+.botao_fbk {
+  padding: 14px 14px;
+  width: 35vh;
+  background-color: #3c3cb5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  justify-items: center;
+  text-align: center;
+  font-size: 100%;
+  margin: 18px auto;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.botao_fbk:hover {
+  background-color: #020024;
+}
+
+/* mapa */
+.map iframe{
+  height: 400px; /* Faz o mapa ocupar a altura total da tela */
+  width: 100%;   /* Faz o mapa ocupar toda a largura */
+  border: none;
+
+  
+}
+
+.mascara{
+  background: rgb(22,32,91);
+background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50%, rgba(11,114,135,0.4) 100%); 
+  z-index: 88;
+  height: 400px;
+  width: 85%;
+  position: absolute;
+  pointer-events: none;
+  
+}
+
+#titulo_atend {
+  color: blue;
+  font-size: var(--fonsztitle-font-size);
+  margin-top: 34px;
+  text-align: center;
+}
+
+/*---------------------feedebeck----------------------*/
+
+.hidden{
+  display: none;
+  margin-bottom: 15px;
+}
+
+#title_coment {
+  color: rgb(255, 255, 255);
+  font-size: var(--fonsztitle-font-size);
+  margin-top: 34px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.elemeto_box_coment{
+  width: 50%;
+  height: auto;
+  background: rgb(2,0,36);
+  background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);  
+  border-radius: 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 5%;
+  outline: 1.5px solid black;
+}
+
+.elemeto_box_coment form{
+  margin: 0 auto;
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+
+.elemeto_box_coment form input, .elemeto_box_coment form textarea {
+  width: 100%;
+  background-color: #2579d3dc;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  gap: 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 90%;
+  outline: 2px solid #2b73c5dc;
+}
+
+.elemeto_box_coment form textarea{
+  resize: none;
+  max-height: 300px;
+}
+
+.elemeto_box_coment form input::placeholder{
+  color: #d1d0d0;
+}
+
+.elemeto_box_coment form textarea::placeholder{
+  color: #d1d0d0;
+}
+
+.submit{
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: #4671ff;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/*---------------------rodape----------------------*/
+
+   .rodape {
+    width: 100%;
+    height: auto;
+    top: 25px;
+    align-items: center;
+  }
+
+  .elemento-box_2 {
+    width: 100%;
+    height: fit-content;
+    min-height: 400px;
+    background-color: rgb(23, 10, 44);
+    z-index: -1;
+    justify-content: center;
+  }
+
+  .org_rod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 6%;
+    top: 25px;
+    height: auto;
+    justify-content: space-between;
+    gap: 6%;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .rodape n6 {
+    color: white;
+  }
+
+  .rodape p {
+    color: white;
+    margin-top: 15px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .endereços {
+    width: 280px;
+  }
+
+  .logo-rod {
+    width: 15%;
+    min-width: 150px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .logo-rod img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+  }
+
+
+/* ----------------------------------------------------------------------- */
+@media screen and (max-width: 1600px) {
+  .man_page {
+    width: 98%;
+  }
+
+  .img_service_logo img {
+    width: 230px;
+    height: 125px;
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+  /* ---------------------- menu ---------------------- */
+
+  .menu {
+    display: none;
+  }
+
+  .logo_top {
+    height: 14vw;
+  }
+
+  .icon_bt{
+    display: block;
+  }
+  
+  .item-fixo {
+  position: absolute;
+  top: 90%; 
+  right: 10px;
+  padding: 10px;
+  background-color: #030749;
+  color: white;
+  border-radius: 100%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; 
+  }
+
+  .fixed {
+  position: fixed;
+  top: 90%; 
+  right: 10px;
+  opacity: 1; 
+  z-index: 99;
+  }
+
+
+  .bt_minha_lig{
+  display: none;
+  }
+
+  /* ---------------------- produtos ---------------------- */
+
+  .img_service_logo img {
+    width: 110px;
+    height: 65px;
+  }
+
+  /* ---------------------- introdução ------------------------ */
+
+  .img_apresentação {
+    height: auto;
+    width: 100%;
+  }
+
+  /* Elemento azul */
+
+  .elemento_azul {
+    flex-direction: column;
+    height: 800px;
+  }
+
+.organize-elemente {
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+  /* ---------------------- produtos e servisos ------------------------ */
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  #inverte_01 {
+    flex-direction: column;
+  }
+
+  .content-servc {
+    margin-top: 10px;
+    margin-bottom: 10vw;
+  }
+
+  /* ---------------------- planos ------------------------ */
+
+  .card-carousel {
+    padding: 20px 20px;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+    --carousel-min-width: auto;
+    --card-height: 495px;
+  }
+
+  .card {
+    flex: 0 1 auto; /* Permite que o card ocupe a largura correta */
+    max-width: 600px; /* Defina um tamanho máximo se necessário */
+    width: 100%; /* Permite que o card ocupe 100% do espaço disponível no container */
+    height: 780px; /* Ajuste a altura conforme necessário */
+    margin: 0 auto; /* Centraliza o card dentro do container */
+  }
+
+  #title_planos{
+    font-size: 5px;
+  }
+
+  .carosel_planos {
+    max-height: 780px; /* Defina a altura fixa ou deixe dinâmica se necessário */
+    overflow: hidden; /* Garante que o conteúdo não transborde */
+  }
+
+  #title_planos{
+    font-size: 6vw;
+  }
+
+  .img_slid_carosel{
+    max-width: 45px;
+    
+    
+  }
+  /* ---------------------- Velocidade ideal -------------------- */
+
+  .card-vide{
+    width: 100%;
+  }
+  
+  /* ---------------------- consutores -------------------- */
+
+  .vend {
+    transition: transform 0.3s ease;
+    width: 20vh;
+    height: auto;
+  }
+  
+  #texter {
+    font-size: 1.6vh;
+  }
+
+  .box{
+    margin-bottom: 25px;
+    max-width: 90vw;
+  }
+
+  .botao_vd {
+  width: 20vh;
+  margin-inline: 2px;
+  font-size: 1.8vh;
+  text-align: center;
+  }
+
+  .icon_vd {
+  width: 1.6vh;
+  }
+
+ /* ---------------------- mapa --------------------- */
+  .map iframe{
+    height: 600px; /* Faz o mapa ocupar a altura total da tela */
+    
+  }
+ /* ---------------------- feedebeck --------------------- */
+
+  .slider {
+    margin-top: 2%;
+    width: 300px;
+    height: 220px;
+  }
+
+  .elemeto_box_coment{
+    width: 100%;
+  }
+
+  /* ---------------------- rodape ------------------------ */
+
+  .org_rod {
+    text-align: center;
+  }
+
+}
