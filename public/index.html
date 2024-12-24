@@ -115,22 +115,21 @@
       <div class="card-tbr">
           <span id="closeCard" class="close-btn">&times;</span>
           <h2>Trabalhe Conosco</h2>
-          <form class="tbr_imp" id="jobForm" method="POST" action="https://formsubmit.co/ajax/61e10a47544c82bd8714f791beb085d7" >
-            <!-- Conteúdo do formulário -->
+          <form class="tbr_imp" id="jobForm" method="POST" action="/send-email" enctype="multipart/form-data">
             <label for="name">NOME</label>
-            <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+            <input type="text" name="name" id="formInputName" placeholder="Digite seu nome" required>
         
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            <input type="email" name="email" id="formInputEmail" placeholder="Digite seu email" required>
         
             <label for="phone">TELEFONE</label>
-            <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone" required>
+            <input type="tel" name="phone" id="formInputPhone" placeholder="Digite seu telefone" required>
         
             <label for="resume">CURRÍCULO</label>
-            <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+            <input type="file" name="resume" id="formInputResume" accept=".pdf,.doc,.docx" required>
         
             <label for="interest">ÁREA DE INTERESSE</label>
-            <select name="interest" id="interest" required>
+            <select name="interest" id="formInputInterest" required>
                 <option value="Comercial">Comercial</option>
                 <option value="Marketing">Marketing</option>
                 <option value="Desenvolvimento">Desenvolvimento</option>
@@ -139,16 +138,18 @@
             </select>
         
             <label for="message">MENSAGEM</label>
-            <textarea name="message" id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+            <textarea name="message" id="formInputMessage" rows="5" placeholder="Digite sua mensagem"></textarea>
         
             <label for="captcha">What is 1 × 7?</label>
-            <input type="number" name="captcha" id="captcha" placeholder="Digite sua resposta" required>
+            <input type="number" name="captcha" id="formInputCaptcha" placeholder="Digite sua resposta" required>
         
             <button type="submit" id="submitBtn">ENVIAR</button>
         </form>
         
+        </form>
+        
     <script src="testetre.js"></script>
-    <!-- <script src="formulario feedbck.js"></script> -->
+    <script src="testeformtbr.js"></script>
       
 
   
@@ -286,11 +287,11 @@
           <section class="serviços_logos" id="ser_prod">
               <h2 class="titulo_serviçe_logoso " id="titulo_serviços"> Serviços é produtos: </h2>
               <div class="img_service_logo">
-                  <img  id="servc_logo_1" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 1.png" alt="logo -Internet Fibra Óptica">
-                  <img  id="servc_logo_2" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 2.png" alt="logo - Lig TV ">
-                  <img  id="servc_logo_3" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 3.png" alt="logo - Lig Home">
-                  <img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 4.png" alt="logo - ">
-                  <img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 5.png" alt="logo - ">
+                <a href="#srviço-01"><img  id="servc_logo_1" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 1.png" alt="logo -Internet Fibra Óptica"> </a>
+                <a href="#srviço-02"><img  id="servc_logo_2" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 2.png" alt="logo - Lig TV "></a>
+                <a href="#srviço-03"><img  id="servc_logo_3" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 3.png" alt="logo - Lig live"></a>
+                <a href="#srviço-04"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 4.png" alt="logo - home"></a>
+                <a href="#srviço-05"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 5.png" alt="logo - empresas"></a>
               </div>
           
 
@@ -634,7 +635,7 @@
           <h2 id="titulo_atend">Onde nos encontrar:</h2>
           <!-- <div class="mascara"></div> -->
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d211530.40690573404!2d-36.37114726170136!3d-9.890335371518873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slig%20telecom!5e0!3m2!1spt-BR!2sbr!4v1734962744944!5m2!1spt-BR!2sbr"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62885.51976781322!2d-36.29474482362586!3d-9.90519825271264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slig%20telecom!5e0!3m2!1spt-BR!2sbr!4v1735067810610!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           
           <!-- FEEDBECKS --> 
@@ -704,7 +705,7 @@
                 <input id="inputTelefone" type="tel" name="telefone" placeholder="Seu telefone:" required>
                 <textarea id="inputFeedback" name="feedback" placeholder="Seu feedback:" required></textarea>
                 <div class="btn-enviar">
-                  <button id="send">ENVIAR</button>
+                  <button class="bt_enviar" id="send">ENVIAR</button>
                 </div>
               </form>
             

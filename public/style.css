@@ -312,7 +312,8 @@ button#submitBtn:hover {
 /* ---------------------------- pagina principal ------------------------- */
 
 .man_page {
-  width: 84.8%;
+  width: 1600px;
+  /* width: 84.8%; */
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   justify-content: center;
@@ -357,7 +358,7 @@ button#submitBtn:hover {
   text-align: center;
 }
 
-/* post introdução */
+/* --------------- post introdução ---------------- */
 
 .post_01_introdução {
   display: flex;
@@ -373,14 +374,14 @@ button#submitBtn:hover {
 
 .post_apresentação {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: r; */
   gap: 50px;
   align-items: center;
 }
 
 .img_apresentação {
-  height: 28vw;
-  width: 45vw;
+  height: 400px;
+  width: 50%;
   justify-content: center;
 }
 
@@ -404,7 +405,7 @@ button#submitBtn:hover {
 
 .texto {
   display: none;
-  padding: 1vh 3vh;
+  padding: 1vh 4vh;
   text-align: justify;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
@@ -572,7 +573,7 @@ c.ontent-servc p {
   background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
    color: #fff;
   padding: 20px;
-  padding-inline: 15vw;
+  padding-inline: 15%;
   border-radius: 10px;
   width: 100%;
   height: auto;
@@ -820,12 +821,22 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
   color: #d1d0d0;
 }
 
-.submit{
+.bt_enviar {
+  padding: 14px 14px;
+  width: 100%;
+  background-color: #3c3cb5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  justify-items: center;
+  text-align: center;
+  font-size: 100%;
   font-weight: bold;
 }
 
-.submit:hover {
-  background-color: #4671ff;
+.bt_enviar:hover {
+  background-color: #020024;
 }
 
 .message {

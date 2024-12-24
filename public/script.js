@@ -39,9 +39,9 @@ function calculateDeviceImpact(deviceCount) {
   if (deviceCount <= 4) {
     values = { socialMedia: 200, work: 200, videos: 100, games: 200 };
   } else if (deviceCount > 4 && deviceCount <= 7) {
-    values = { socialMedia: 300, work: 100, videos: 100, games: 300 };
+    values = { socialMedia: 300, work: 300, videos: 100, games: 200 };
   } else if (deviceCount > 7) {
-    values = { socialMedia: 350, work: 100, videos: 100, games: 250 };
+    values = { socialMedia: 400, work: 100, videos: 100, games: 200 };
   }
 
   return values;

@@ -50,10 +50,10 @@ display: flex;
   /* max-width: var(--card-max-width);
   min-width: 250px;
   height: var(--card-height); */
-  /width: var(--card-width); 
+  width: var(--card-width); 
   max-width: 420px; 
   padding: 0.6em; 
-  min-width: 390px;
+  min-width: 420px;
   height: 515px; 
   position: absolute;
   margin: 0 auto;
@@ -267,7 +267,7 @@ h2{
 
 .card-carousel .card {
   max-width: var(--card-max-width);
-  min-width: 255px;
+  min-width: 350px;
   height: var(--card-height);
 }
 
