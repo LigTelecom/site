@@ -253,7 +253,6 @@ video {
   border-radius: 5px;
 }
 
-
 button#submitBtn {
   margin-top: 10px;
   padding: 6px;
@@ -553,6 +552,11 @@ c.ontent-servc p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#title_vloide{
+  color: white;
+  margin-bottom: 5px;
+}
+
 .card-vide h2 {
   font-size: 1.5em;
   margin-bottom: 1px;
@@ -564,6 +568,7 @@ c.ontent-servc p {
   align-items: center;
   margin: 2px 0;
   position: relative;
+  margin: 10px;
 }
 
 .meter {
@@ -611,6 +616,13 @@ input[type="range"] {
   width: 100%;
   margin-top: 10px;
 }
+
+input[type="checkbox"]:disabled:checked::after {
+  opacity: 1; /* Garante que não fique "apagado" */
+  background-color: #0056b3;
+  cursor: not-allowed; /* Indica que não pode ser clicado */
+}
+
 
 
 /*---------------------slider----------------------*/
@@ -723,6 +735,13 @@ input[type="range"] {
   text-align: center;
 }
 
+#map_Mobile{
+    display: none;
+}
+
+ #map-desctop{
+  display: block;
+ }
 /*---------------------feedebeck----------------------*/
 
 .hidden{
@@ -896,6 +915,7 @@ input[type="range"] {
 }
 
 /* ----------------------------------------------------------------------- */
+
 @media screen and (max-width: 640px) {
 
   .flex {
@@ -1060,6 +1080,14 @@ input[type="range"] {
   .map iframe{
     height: 600px; /* Faz o mapa ocupar a altura total da tela */
     
+  }
+
+  #map_Mobile{
+    display: block;
+  }
+  
+  #map-desctop{
+  display: none;
   }
   
  /* ---------------------- feedebeck --------------------- */

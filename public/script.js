@@ -32,6 +32,8 @@ function calculateSpeed() {
 document.getElementById("socialMedia").checked = true;
 document.getElementById("socialMedia").disabled = true;
 
+
+
 // Função para calcular impacto baseado no número de dispositivos
 function calculateDeviceImpact(deviceCount) {
   let values = { socialMedia: 20, work: 50, videos: 100, games: 150 };
