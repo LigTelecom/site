@@ -1,10 +1,11 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   --fonsztitle-font-size: 4vh;
- /* outline: 1px solid red; */
+  /* outline: 1px solid red; */
 }
 
 header,
@@ -110,8 +111,8 @@ video {
 /* ----------------------------menu mobile ------------------------- */
 
 .menu_mobile{
-  display: flex; /* Para o espaçamento funcionar */
-  justify-content: flex-start; /* Espaça os elementos dentro do container */
+  display: flex; 
+  justify-content: flex-start; 
   flex-direction: column;
   padding: 0;
 }
@@ -133,7 +134,7 @@ video {
 
 .bt_min_lig{
   justify-content: center;
-  margin: 0 auto; /* Centraliza horizontalmente o botão */
+  margin: 0 auto; 
 }
 
 .bt_min_lig button {
@@ -205,25 +206,6 @@ video {
   height: 100vh;
 }
 
-/* Botão principal */
-/* #openFormBtn {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1em;
-  border-radius: 5px;
-}
-
-#openFormBtn:hover {
-  background-color: #45a049;
-} */
-
-/* Card invisível inicialmente */
-
-
-/* Fundo escurecido */
 #cardContainer {
   position: fixed;
   top: 0;
@@ -231,15 +213,12 @@ video {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  display: none; /* Card inicialmente invisível */
+  display: none; 
   justify-content: center;
   align-items: center;
-  z-index: 999;
-  
-  
+  z-index: 999;  
 }
 
-/* Estilo do card */
 .card-tbr {
   background-color: #fff;
   width: 90%;
@@ -284,17 +263,13 @@ button#submitBtn {
   font-weight: bold;
   cursor: pointer;
   border-radius: 15px;
-  width: 80px;
-  
- 
-  
+  width: 80px;  
 }
 
 button#submitBtn:hover {
   background-color: #b3c233;
 }
 
-/* Botão de fechar */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -348,7 +323,6 @@ button#submitBtn:hover {
 .img_service_logo img:hover {
   transform: scale(1.06);
 }
-
 
 #titulo_serviços {
   color: #3c3cb5;
@@ -433,14 +407,13 @@ button#submitBtn:hover {
 /*------------------------------------ alemento azul -------------------------------*/
 
 .elemento_azul {
-  height: 500px;
+  height: 420px;
   margin: auto;
   background: rgb(22,32,91);
-background: linear-gradient(34deg, rgba(22,32,91,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
-margin-top: 100px;
+  background: linear-gradient(34deg, rgba(22,32,91,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
+  margin-top: 50px;
   margin-bottom: 40px;
-  padding: 50px;
- 
+  padding: 30px;
 }
 
 .title_elemente{
@@ -453,12 +426,11 @@ margin-top: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  height: 320px;
 }
 
 .item-post{
   display: flex;
-  
 }
 
 .text-post p {
@@ -479,7 +451,6 @@ margin-top: 100px;
   height: 100%;
   width: 90% background-color white;
 }
-
 
 /*--------------------------------serviços e produto ------------------------------*/
 
@@ -728,28 +699,25 @@ input[type="range"] {
   background-color: #020024;
 }
 
-/* mapa */
+/* ------------------------------- mapa ------------------------*/
 .map iframe{
-  height: 400px; /* Faz o mapa ocupar a altura total da tela */
-  width: 100%;   /* Faz o mapa ocupar toda a largura */
+  height: 420px; 
+  width: 100%;   
   border: none;
-
-  
 }
 
 .mascara{
   background: rgb(22,32,91);
-background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50%, rgba(11,114,135,0.4) 100%); 
+  background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50%, rgba(11,114,135,0.4) 100%); 
   z-index: 88;
   height: 400px;
   width: 85%;
   position: absolute;
   pointer-events: none;
-  
 }
 
 #titulo_atend {
-  color: blue;
+  color: #3c3cb5;
   font-size: var(--fonsztitle-font-size);
   margin-top: 34px;
   text-align: center;
@@ -839,22 +807,6 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
   background-color: #020024;
 }
 
-.message {
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  display: none;
-}
-.success {
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-}
-.error {
-  background-color: #f8d7da;
-  color: #721c24;
-  border: 1px solid #f5c6cb;
-}
 
 /*---------------------rodape----------------------*/
 
@@ -931,6 +883,7 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
 
 
 /* ----------------------------------------------------------------------- */
+
 @media screen and (max-width: 1600px) {
   .man_page {
     width: 98%;
@@ -1010,12 +963,12 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
     height: 800px;
   }
 
-.organize-elemente {
-  justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  gap: 10px;
-}
+  .organize-elemente {
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
 
   /* ---------------------- produtos e servisos ------------------------ */
 
@@ -1045,11 +998,11 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
   }
 
   .card {
-    flex: 0 1 auto; /* Permite que o card ocupe a largura correta */
-    max-width: 600px; /* Defina um tamanho máximo se necessário */
-    width: 100%; /* Permite que o card ocupe 100% do espaço disponível no container */
-    height: 780px; /* Ajuste a altura conforme necessário */
-    margin: 0 auto; /* Centraliza o card dentro do container */
+    flex: 0 1 auto;
+    max-width: 600px; 
+    width: 100%; 
+    height: 780px; 
+    margin: 0 auto; 
   }
 
   #title_planos{
@@ -1057,8 +1010,9 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
   }
 
   .carosel_planos {
-    max-height: 780px; /* Defina a altura fixa ou deixe dinâmica se necessário */
-    overflow: hidden; /* Garante que o conteúdo não transborde */
+    max-height: 780px; 
+    min-height: 760px;
+    overflow: hidden; 
   }
 
   #title_planos{
@@ -1067,8 +1021,6 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
 
   .img_slid_carosel{
     max-width: 45px;
-    
-    
   }
   /* ---------------------- Velocidade ideal -------------------- */
 
@@ -1094,14 +1046,14 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
   }
 
   .botao_vd {
-  width: 20vh;
-  margin-inline: 2px;
-  font-size: 1.8vh;
-  text-align: center;
+    width: 20vh;
+    margin-inline: 2px;
+    font-size: 1.8vh;
+    text-align: center;
   }
 
   .icon_vd {
-  width: 1.6vh;
+     width: 1.6vh;
   }
 
  /* ---------------------- mapa --------------------- */
@@ -1109,6 +1061,7 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
     height: 600px; /* Faz o mapa ocupar a altura total da tela */
     
   }
+  
  /* ---------------------- feedebeck --------------------- */
 
   .slider {
