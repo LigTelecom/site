@@ -33,7 +33,7 @@ body {
   white-space: nowrap;
   font-size: 1.2vw;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .con_menu{
@@ -1011,8 +1011,6 @@ input[type="checkbox"]:disabled:checked::after {
   .video-container{
     display: none;
     height: auto;
-
-    
   }
 
   .video-container-mobile{
@@ -1023,7 +1021,9 @@ input[type="checkbox"]:disabled:checked::after {
     height: auto;
   }
 
-  
+  .page_up_organize{
+    opacity: 0%;
+  }
 
   /* ---------------------- produtos ---------------------- */
 
