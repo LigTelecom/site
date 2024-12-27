@@ -295,6 +295,43 @@ button#submitBtn:hover {
   z-index: 0;
 }
 
+#pageUpButton {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none; /* Esconde inicialmente */
+  background-color: #005BB5;
+  color: rgb(166, 97, 97);
+  border: none;
+  padding: 4px 8px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: opacity 0.3s;;
+  align-items: center;
+  display: flex;
+  opacity: 0; /* Começa invisível */
+  transform: translateY(20px); /* Começa deslocado */
+  transition: opacity 0.3s, transform 0.3s; /* Transição suave */
+}
+
+#pageUpButton.show {
+  display: block; /* Torna visível */
+  opacity: 1; /* Totalmente visível */
+  transform: translateY(0); /* Sem deslocamento */
+}
+
+#pageUpButton:hover {
+  background-color: #16205B;
+}
+
+#icon_up{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 /*--------------------------------logo serviso ------------------------------*/
 
 .img_service_logo {
@@ -464,6 +501,7 @@ button#submitBtn:hover {
   display: flex;
   align-items: flex-start;
   gap: 50px;
+  align-items: center;
 }
 
 #inverte_01 {
@@ -478,7 +516,8 @@ button#submitBtn:hover {
 .content-servc {
   flex: 0.9;
   text-align: left;
-  margin-top: 4vw;
+  /* margin-top: 4vw; */
+ 
   
 }
 
@@ -497,25 +536,26 @@ c.ontent-servc p {
 
 #title_srviço-01{
   color: #C4FF4B ;
-  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-color: #a8dd3e ;
   -webkit-text-stroke-width: 1px;
 }
 
 #title_srviço-02{
   color: #AB55FE ;
-  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-color: #8a44cd ;
   -webkit-text-stroke-width: 1px;
 }
 
 #title_srviço-03{
   color: #161E5C ;
-  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-color: #0f1540 ;
   -webkit-text-stroke-width: 1px;
+  
 }
 
 #title_srviço-04{
   color: #FF821C ;
-  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-color: #db6f17 ;
   -webkit-text-stroke-width: 1px;
 }
 
@@ -962,6 +1002,9 @@ input[type="checkbox"]:disabled:checked::after {
   display: none;
   }
 
+  .page_up_organize {
+    display: none;
+  }
   /* ---------------------- produtos ---------------------- */
 
   .img_service_logo img {
@@ -1005,7 +1048,10 @@ input[type="checkbox"]:disabled:checked::after {
     margin-top: 10px;
     margin-bottom: 10vw;
   }
-
+  .item {
+    align-items: normal;
+  }
+  
   /* ---------------------- planos ------------------------ */
 
   .card-carousel {

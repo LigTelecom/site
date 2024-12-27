@@ -31,17 +31,19 @@
     <div class="menu-ger">
       <div class="con_menu">
         <!-- Logo -->
-        <img class="logo_top" src="Midias/logo-lig (1).png" alt="Logo">
+        <img id="logotop" class="logo_top" src="Midias/logo-lig (1).png" alt="Logo">
   
         <!-- Menu de Navegação -->
         <nav>
           <ul class="menu">
-            <li><a href="#post_apresentação">Sobre nós</a></li>
-            <li><a href="#ser_prod">Serviços e Produtos</a></li>
-            <li><a href="#planos">Planos</a></li>
+            <li><a href="#post_apresentação" class="scroll-link">Sobre nós</a></li>
+            <li><a href="#ser_prod" class="scroll-link">Serviços e Produtos</a></li>
+            <li><a href="#planos" class="scroll-link">Planos</a></li>
             <li><a id="openFormBtn">Trabalhe Conosco</a></li>
           </ul>
         </nav>
+
+        
   
         <!-- Botão para abrir menu -->
         <div id="btnmenu" class="btn_abrir_menu">
@@ -57,7 +59,7 @@
               <svg class="icon" id="icon_min_lig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
               </svg>
-              Minha Lig
+              Minha LIG
             </button>
           </a>
         </div>
@@ -65,7 +67,7 @@
     </div>
   
     <!-- Contêiner de Vídeo -->
-    <div class="video-container">
+    <div id="video-container" class="video-container">
       <video autoplay loop muted>
         <source src="Midias/tsvideo.mp4" type="video/mp4">
         Seu navegador não suporta vídeos. Por favor, atualize-o.
@@ -82,6 +84,7 @@
               <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
             </svg>
 
+          <li><a href="#logotop">Inicio</a></li>
           <li><a href="#post_apresentação">Sobre nós</a></li>
           <li><a href="#ser_prod">Serviços e Produtos</a></li>
           <li><a href="#planos">Planos</a></li>
@@ -160,16 +163,23 @@
 <!-- CORPO --> 
   <main>
 
+    <div class="page_up_organize">
+    <button id="pageUpButton" title="Voltar ao topo">
+      <svg xmlns="http://www.w3.org/2000/svg" height="34" width="31" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+    </button>
+    <script src="pageup.js"></script>
+    </div>
+
     <div class="man_page" >
 
           <!-- PRUDUTOS -->
           <section class="serviços_logos" id="ser_log_01">
             <article class="img_service_logo ">
-              <a href="#srviço-01"><img  id="servc_logo_1" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 1.png" alt="logo -Internet Fibra Óptica"> </a>
-              <a href="#srviço-02"><img  id="servc_logo_2" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 2.png" alt="logo - Lig TV "></a>
-              <a href="#srviço-03"><img  id="servc_logo_3" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 3.png" alt="logo - Lig Home"></a>
-              <a href="#srviço-04"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 4.png" alt="logo - "></a>
-              <a href="#srviço-05"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 5.png" alt="logo - "></a>
+              <a class="scroll-link" href="#srviço-01"><img  id="servc_logo_1" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 1.png" alt="logo -Internet Fibra Óptica"> </a>
+              <a class="scroll-link" href="#srviço-02"><img  id="servc_logo_2" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 2.png" alt="logo - Lig TV "></a>
+              <a class="scroll-link" href="#srviço-03"><img  id="servc_logo_3" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 3.png" alt="logo - Lig livre"></a>
+              <a class="scroll-link" href="#srviço-04"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 4.png" alt="logo - home"></a>
+              <a class="scroll-link" href="#srviço-05"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 5.png" alt="logo - empresas"></a>
             </article>
           </section>
 
@@ -272,17 +282,26 @@
           <section class="serviços_logos" id="ser_prod">
             <h2 class="titulo_serviçe_logoso " id="titulo_serviços"> Serviços é produtos: </h2>
             <div class="img_service_logo">
-              <a href="#srviço-01"><img  id="servc_logo_1" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 1.png" alt="logo -Internet Fibra Óptica"> </a>
-              <a href="#srviço-02"><img  id="servc_logo_2" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 2.png" alt="logo - Lig TV "></a>
-              <a href="#srviço-03"><img  id="servc_logo_3" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 3.png" alt="logo - Lig live"></a>
-              <a href="#srviço-04"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 4.png" alt="logo - home"></a>
-              <a href="#srviço-05"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 5.png" alt="logo - empresas"></a>
+              <a class="scroll-link" href="#srviço-01"><img  id="servc_logo_1" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 1.png" alt="logo -Internet Fibra Óptica"> </a>
+              <a class="scroll-link" href="#srviço-02"><img  id="servc_logo_2" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 2.png" alt="logo - Lig TV "></a>
+              <a class="scroll-link" href="#srviço-03"><img  id="servc_logo_3" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 3.png" alt="logo - Lig livre"></a>
+              <a class="scroll-link" href="#srviço-04"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS - 4.png" alt="logo - home"></a>
+              <a class="scroll-link" href="#srviço-05"><img  id="servc_logo_4" src="LIG - SITE/LIG PRODUTOS/LIG PRODUTOS 5.png" alt="logo - empresas"></a>
             </div>
       
 
             <!-- serviços -->
             <section class="container">
             
+              <article  class="item flex">
+                <img id="srviço-01" class="midia_servisos" src="Midias/imagem_lig.png" alt="Imagem apresentatadno nosso serviço de fibra otica">
+                <div class="content-servc">
+                  <h2 id="title_srviço-01">Internet Fibra Óptica</h2>
+                  <p>Conexão ultrarrápida e estável para você navegar, assistir e trabalhar sem interrupções.
+                  </p>
+                </div>
+              </article>
+
               <article class="item flex" id="inverte_01">
                 <img id="srviço-02" class="midia_servisos" src="Midias/imagem_lig.png" alt="Imagem apresentatadno nosso serviço de strimg lig tv">
                 <div class="content-servc">
@@ -294,7 +313,7 @@
               <article class="item flex">
                 <img id="srviço-03" class="midia_servisos" src="Midias/imagem_lig.png" alt="Imagem Imagem apresentatadno nosso serviço de sistema de auto monitoramento: Lig Home ">
                 <div class="content-servc">
-                  <h2 id="title_srviço-03">Lig live</h2>
+                  <h2 id="title_srviço-03">Lig livre</h2>
                   <p>Parágrafo de exemplo ao lado da imagem.</p>
                 </div>
               </article>
@@ -302,8 +321,8 @@
               <article class="item flex" id="inverte_01">
                 <img id="srviço-04" class="midia_servisos" src="Midias/imagem_lig.png" alt="Imagem">
                 <div class="content-servc">
-                <h2 id="title_srviço-04">Lig Home</h2>
-                <p>Sistema de auto monitoramento por câmeras para sua casa, garantindo segurança e praticidade.</p>
+                  <h2 id="title_srviço-04">Lig Home</h2>
+                  <p>Sistema de auto monitoramento por câmeras para sua casa, garantindo segurança e praticidade.</p>
                 </div>
               </article>
               
@@ -691,7 +710,7 @@
 
       </div>
     </div>
-
+    <script src="scrolefct.js"></script>
   </main>
 
 <!-- RODAPE --> 

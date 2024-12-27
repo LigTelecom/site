@@ -38,7 +38,7 @@ app.post('/send-email', async (req, res) => {
             },
             body: JSON.stringify({
                 from: "hotsite@ligfibra.net.br",
-                to: "sac@ligfibra.net.br",
+                to: "recrutamento@ligfibra.net.br",
                 subject: "Nova inscrição recebida",
                 body: `
                     <p><strong>Nome:</strong> ${name}</p>
