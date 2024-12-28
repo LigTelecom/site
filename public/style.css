@@ -75,6 +75,8 @@ body {
   display: none;
 }
 
+
+
 .video-container {
   position: relative;
   width: 100%;
@@ -1045,6 +1047,11 @@ input[type="checkbox"]:disabled:checked::after {
     width: auto; /* A largura será ajustada proporcionalmente */
     height: 100%; /* O vídeo sempre terá 600px de altura */
     object-fit: cover; 
+  }
+
+  .page_up_organize {
+    display: none;
+    
   }
 
   /* ---------------------- produtos ---------------------- */
