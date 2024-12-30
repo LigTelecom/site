@@ -34,14 +34,16 @@
         <img id="logotop" class="logo_top" src="Midias/logo-lig (1).png" alt="Logo">
   
         <!-- Menu de Navegação -->
+         <div >
         <nav>
           <ul class="menu">
-            <li><a href="#post_apresentação" class="scroll-link">Sobre nós</a></li>
-            <li><a href="#ser_prod" class="scroll-link">Serviços e Produtos</a></li>
-            <li><a href="#planos" class="scroll-link">Planos</a></li>
-            <li><a id="openFormBtn">Trabalhe Conosco</a></li>
+            <li class="bk_box"><a href="#post_apresentação" class="scroll-link">Sobre nós</a></li>
+            <li class="bk_box"><a href="#ser_prod" class="scroll-link">Serviços e Produtos</a></li>
+            <li class="bk_box"><a href="#planos" class="scroll-link">Planos</a></li>
+            <li class="bk_box"><a id="openFormBtn">Trabalhe Conosco</a></li>
           </ul>
         </nav>
+      </div>
 
   
         <!-- Botão para abrir menu -->
@@ -155,9 +157,9 @@
             <label for="message">MENSAGEM</label>
             <textarea name="message" id="formInputMessage" rows="5" placeholder="Digite sua mensagem"></textarea>
         
-            <label for="captcha">What is 1 × 7?</label>
+            <!-- <label for="captcha">What is 1 × 7?</label>
             <input type="number" name="captcha" id="formInputCaptcha" placeholder="Digite sua resposta" required>
-        
+         -->
             <button type="submit" id="submitBtn">ENVIAR</button>
           </form>
       </div>
@@ -220,8 +222,8 @@
                 <div id="bot_introdução" class="bot_introdução">
           
                   <!-- Botão: Nossos Valores -->
-                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto2')">Nossos Valores :</button>
-                  <article id="texto2" class="texto">
+                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto2')"><h3>Nossos Valores :</h3></button>
+                  <article id="texto2" class="texto" title="Nossos valores:">
                   <ul>
                     <li><b>Inovação:</b> Buscar constantemente novas soluções que atendam às necessidades de nossos clientes.<br></li>
                     <li><b>Excelência:</b> Superar expectativas, entregando sempre qualidade e eficiência.<br></li>
@@ -234,13 +236,13 @@
                   </article>
           
                   <!-- Botão: Nossa História -->
-                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto3')">Nossa História :</button>
+                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto3')"><h3>Nossa História :</h3></button>
                   <article id="texto3" class="texto">
                     Este é o texto 3. Ele também aparece ao clicar no botão.
                   </article>
           
                   <!-- Botão: Nossa Visão -->
-                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto4')">Nosso Propósito :</button>
+                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto4')"><h3>Nosso Propósito :</h3></button>
                   <article id="texto4" class="texto">
                     Conectar pessoas e ideias por meio de soluções inovadoras, 
                     oferecendo uma experiência que combina excelência tecnológica, transparência, 
@@ -249,7 +251,7 @@
                   </article>
           
                   <!-- Botão: Premiações -->
-                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto5')">Nossa Visão :</button>
+                  <button class="bot_expancivo_intro" onclick="toggleTexto('texto5')"><h3>Nossa Visão :</h3></button>
                   <article id="texto5" class="texto">
                     Oferecer conectividade como uma experiência inteligente, inovadora e inclusiva, 
                     conectando tecnologia e pessoas para um futuro mais sustentável e integrado, 
@@ -264,28 +266,28 @@
           <!-- ELEMENTO 1 -->
           <section id="ea_01" class="elemento_azul">
 
-            <div class="title_elemente"><p>Somos mais do que uma provedora de internet; somos parceiros na transformação digital da sua vida.</p></div>
+            <div class="title_elemente"><h4>Somos mais do que uma provedora de internet; somos parceiros na transformação digital da sua vida.</h4></div>
 
             <div class="organize-elemente flex">
 
               <article class="item-post flex">
                 <svg class="icon_post" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm32 97.3c28.3-12.3 48-40.5 48-73.3c0-44.2-35.8-80-80-80S48 51.8 48 96c0 32.8 19.7 61 48 73.3L96 224l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0 0 54.7c-28.3 12.3-48 40.5-48 73.3c0 44.2 35.8 80 80 80s80-35.8 80-80c0-32.8-19.7-61-48-73.3l0-54.7 256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-54.7c28.3-12.3 48-40.5 48-73.3c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 32.8 19.7 61 48 73.3l0 54.7-320 0 0-54.7zM488 96a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM320 392a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                 <div class="text-post">
-                  <p> + de 10 anos de história</p>
+                  <h4> + de 10 anos de história</h4>
                 </div>
               </article>
               
               <article class="item-post flex">
                 <svg class="icon_post" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M357.7 8.5c-12.3-11.3-31.2-11.3-43.4 0l-208 192c-9.4 8.6-12.7 22-8.5 34c87.1 25.3 155.6 94.2 180.3 181.6L464 416c26.5 0 48-21.5 48-48l0-112 32 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8.1-35.2l-208-192zM288 208c0-8.8 7.2-16 16-16l64 0c8.8 0 16 7.2 16 16l0 64c0 8.8-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16l0-64zM24 256c-13.3 0-24 10.7-24 24s10.7 24 24 24c101.6 0 184 82.4 184 184c0 13.3 10.7 24 24 24s24-10.7 24-24c0-128.1-103.9-232-232-232zm8 256a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM0 376c0 13.3 10.7 24 24 24c48.6 0 88 39.4 88 88c0 13.3 10.7 24 24 24s24-10.7 24-24c0-75.1-60.9-136-136-136c-13.3 0-24 10.7-24 24z"/></svg>
                 <div class="text-post">
-                  <p> Conectando + de 6 mil lares</p>
+                  <h4> Conectando + de 6 mil lares</h4>
                 </div>
               </article>
               
                 <article class="item-post flex">
                   <svg class="icon_post" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152l0 270.8c0 9.8-6 18.6-15.1 22.3L416 503l0-302.6zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6l0 251.4L32.9 502.7C17.1 509 0 497.4 0 480.4L0 209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77l0 249.3L192 449.4 192 255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
                   <div class="text-post">
-                    <p> Matriz em Teotônio Vilela e 3 filiais por Alagoas</p>
+                    <h4> Matriz em Teotônio Vilela e 3 filiais por Alagoas</h4>
                   </div>
               </article>
 
@@ -733,8 +735,9 @@
   <footer class="rodape">
 
     <div class="elemento-box_2">
+      <nav>
               <div class="org_rod flex">
-                
+               
                   <div class="logo-rod"><img src="Midias/logo-lig (1).png" alt="imagem basica"></div>
                   <!-- <div class="vendedores"> <n6><b>CONSUTORES:</b></n6>
                     <div><p><a href="https://api.whatsapp.com/send/?phone=5508000420600&text=Ol%C3%A1%21+Vim+do+site+da+LIG+e+estou+interessado%28a%29+no%3A+Plano+essencial&type=phone_number&app_absent=0"> Joa dos Santos<br>
@@ -758,7 +761,8 @@
                       <div id="insta."><p><a href="https://www.instagram.com/lig.oficial/">
                           <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> @lig.oficial</p></div></a>
                       <div id="face."><p><a href="https://www.facebook.com/ligfibra.br/">
-                          <svg id="face_icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H296V299.3h86.5l18-97.8H296V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H24v97.8H80z"/></svg> @LIG</p></div></a>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fafafa" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+                        @LIG</p></div></a>
                       <div id="yut."><p><a href="https://www.youtube.com/@lig.oficial">
                       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg> @lig.oficial</p></div></a>
                   </div>
@@ -773,6 +777,7 @@
                   </div>
 
               </div>
+            </nav>
 
               <div id="corp-rod"> <n6>Copyright ©  Lig. Todos os direitos reservados - CNPJ: 32.100.895/0001-22</n6></div>
     </div>

@@ -34,28 +34,37 @@ body {
   font-size: 1.2vw;
   font-weight: bold;
   color: white;
+  gap: 0px;
 }
 
 .con_menu{
  width: 90vw;
+ 
+}
+
+.bk_box{
+  background-color: #9c9c9c35;
+  border-radius: 15px;
+
 }
 
 .menu-ger >.con_menu nav  ul{
   list-style-type: none;
+  
 }
 
 .menu-ger >.con_menu nav  ul li{
   display: inline-block;
-  padding: 0% 4%;
+  padding: 0% 2%;
 }
 
 .menu-ger >.con_menu nav  ul li a{
   display: inline-block;
-  padding: 0% 4%;
+  padding: 0% 2%;
 }
 
 .menu-ger >.con_menu nav  ul li a:hover{
-  color: #0056b3;
+  color: #061e37;
 }
 
 .logo_top {
@@ -486,7 +495,7 @@ button#submitBtn:hover {
   display: flex;
 }
 
-.text-post p {
+.text-post h4 {
   color: white;
   align-items: center;
   font-size: 22px;

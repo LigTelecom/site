@@ -9,44 +9,45 @@ const needle = document.querySelector('.meter-needle');
 
 // Função para calcular velocidade
 function calculateSpeed() {
-  let speed = 0; // Velocidade base
+  const deviceValue = calculateDeviceImpact(Number(devices.value));
+  let total = 0;
 
-  // Valores agregados baseados na quantidade de dispositivos conectados
-  const deviceValue = calculateDeviceImpact(devices.value);
+  if (socialMedia.checked) total += deviceValue.socialMedia;
+  if (work.checked) total += deviceValue.work;
+  if (videos.checked) total += deviceValue.videos;
+  if (games.checked) total += deviceValue.games;
 
-  if (socialMedia.checked) speed += deviceValue.socialMedia;
-  if (work.checked) speed += deviceValue.work;
-  if (videos.checked) speed += deviceValue.videos;
-  if (games.checked) speed += deviceValue.games;
+  // Aplica o limite máximo para a soma total
+  const maxLimit = getMaxLimit(Number(devices.value));
+  const adjustedSpeed = Math.min(total, maxLimit);
 
-  // Aumenta com a quantidade de dispositivos
-  // speed += devices.value * 10;
-
-  // Ajusta visualização
-  if (speed > 1000) speed = 1000; // Limite de 1000 MEGA
-
-  speedDisplay.textContent = `${speed}MEGA`;
-  updateNeedle(speed);
+  // Atualiza a visualização
+  speedDisplay.textContent = `${adjustedSpeed}MEGA`;
+  updateNeedle(adjustedSpeed);
 }
 
 document.getElementById("socialMedia").checked = true;
 document.getElementById("socialMedia").disabled = true;
 
-
-
 // Função para calcular impacto baseado no número de dispositivos
 function calculateDeviceImpact(deviceCount) {
-  let values = { socialMedia: 20, work: 50, videos: 100, games: 150 };
-
-  if (deviceCount <= 4) {
-    values = { socialMedia: 200, work: 200, videos: 100, games: 100 };
-  } else if (deviceCount > 4 && deviceCount <= 7) {
-    values = { socialMedia: 200, work: 200, videos: 100, games: 100 };
+  if (deviceCount >= 1 && deviceCount <= 4) {
+    return { socialMedia: 200, work: 200, videos: 100, games: 100 };
+  } else if (deviceCount >= 5 && deviceCount <= 7) {
+    return { socialMedia: 300, work: 100, videos: 100, games: 100 };
   } else if (deviceCount > 7) {
-    values = { socialMedia: 400, work: 100, videos: 100, games: 200 };
+    return { socialMedia: 500, work: 300, videos: 300, games: 300 };
+  } else {
+    return { socialMedia: 0, work: 0, videos: 0, games: 0 };
   }
+}
 
-  return values;
+// Função para retornar o limite máximo baseado na faixa de dispositivos
+function getMaxLimit(deviceCount) {
+  if (deviceCount >= 1 && deviceCount <= 4) return 400;
+  if (deviceCount >= 5 && deviceCount <= 7) return 500;
+  if (deviceCount > 7) return 800;
+  return 0;
 }
 
 // Atualiza a agulha do velocímetro
