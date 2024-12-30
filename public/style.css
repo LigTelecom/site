@@ -5,7 +5,11 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
   --fonsztitle-font-size: 4vh;
+  --colortitle-color:  #16205b;;
   /* outline: 1px solid red; */
+  p{
+    color: var(--colortitle-color);
+  }
 }
 
 header,
@@ -43,7 +47,7 @@ body {
 }
 
 .bk_box{
-  background-color: #9c9c9c24;
+  background-color: #16205b;
   border-radius: 15px;
 
 }
@@ -55,16 +59,16 @@ body {
 
 .menu-ger >.con_menu nav  ul li{
   display: inline-block;
-  padding: 0% 2%;
+  padding: 0% 4%;
 }
 
 .menu-ger >.con_menu nav  ul li a{
   display: inline-block;
-  padding: 0% 2%;
+  padding: 0% 4%;
 }
 
 .menu-ger >.con_menu nav  ul li a:hover{
-  color: #061e37;
+  color:  #16205b;
 }
 
 .logo_top {
@@ -326,7 +330,7 @@ button#submitBtn:hover {
   bottom: 40px;
   right: 40px;
   display: none; /* Esconde inicialmente */
-  background-color: #005BB5;
+  background-color:  #16205b  ;
   color: rgb(166, 97, 97);
   border: none;
   padding: 4px 8px;
@@ -375,7 +379,7 @@ button#submitBtn:hover {
 }
 
 .img_service_logo img {
-  width: 270px;
+  width: 210px;
   height: 145px;
   max-width: 100%;
   object-fit: cover;
@@ -387,7 +391,7 @@ button#submitBtn:hover {
 }
 
 #titulo_serviços {
-  color: #3c3cb5;
+  color:var(--colortitle-color);
   font-size: 50px;
   margin-top: 34px;
   margin-bottom: 0px;
@@ -404,7 +408,7 @@ button#submitBtn:hover {
 }
 
 #titulo_sobrenos {
-  color: #3c3cb5;
+  color: var(--colortitle-color);
   font-size: var(--fonsztitle-font-size);
 }
 
@@ -451,7 +455,7 @@ button#submitBtn:hover {
 .bot_expancivo_intro {
   padding: 10px 20px;
   width: 100%;
-  background-color: #3c3cb5;
+  background-color:  #16205b ;
   color: white;
   border: none;
   border-radius: 25px;
@@ -468,7 +472,18 @@ button#submitBtn:hover {
 
 /*------------------------------------ alemento azul -------------------------------*/
 
-.elemento_azul {
+.apresentção_img {
+  width: 100%; /* Garante que a largura não ultrapasse o container */
+  height: auto;    /* Mantém a proporção da imagem */
+  display: block;  /* Remove possíveis espaços extras causados por comportamento inline */
+  margin-top: 30px;
+ 
+}
+
+.apresentção_img_mobile{
+  display: none;
+}
+/* .elemento_azul {
   height: 420px;
   margin: auto;
   background: rgb(22,32,91);
@@ -512,7 +527,7 @@ button#submitBtn:hover {
 .elemento {
   height: 100%;
   width: 90% background-color white;
-}
+} */
 
 /*--------------------------------serviços e produto ------------------------------*/
 
@@ -535,7 +550,7 @@ button#submitBtn:hover {
 }
 
 .midia_servisos {
-  height: 400px;
+  
   width: 50%;
 }
 
@@ -549,39 +564,36 @@ button#submitBtn:hover {
 
 .content-servc h2 {
   margin: 0 0 0px;
-  color: #3c3cb5;
+  color: var(--colortitle-color);
   font-size: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
-c.ontent-servc p {
-  font-size: 16px;
+.content-servc p {
+  font-size: 26px;
   line-height: 1.6;
-  color: #333;
+  color: var(--colortitle-color);
+  font-weight: bold;
 }
 
-#title_srviço-01{
-  color: #C4FF4B ;
-  -webkit-text-stroke-color: #a8dd3e ;
+#title_srviço{
+  color:  #16205b;
   -webkit-text-stroke-width: 1px;
 }
 
-#title_srviço-02{
-  color: #AB55FE ;
-  -webkit-text-stroke-color: #8a44cd ;
+/* #title_srviço-02{
+  color: #161e5c ;
   -webkit-text-stroke-width: 1px;
 }
 
 #title_srviço-03{
-  color: #161E5C ;
-  -webkit-text-stroke-color: #0f1540 ;
+  color: #161e5c ;
   -webkit-text-stroke-width: 1px;
   
 }
 
 #title_srviço-04{
-  color: #FF821C ;
-  -webkit-text-stroke-color: #db6f17 ;
+  color: #161e5c ;
   -webkit-text-stroke-width: 1px;
 }
 
@@ -589,6 +601,10 @@ c.ontent-servc p {
   color: #000000 ;
   -webkit-text-stroke-color: #000000 ;
   -webkit-text-stroke-width: 1px;
+} */
+
+.logo_serviços{
+  width: 300px;
 }
 
 /*-------------------------------- Velocidade ideal ------------------------------*/
@@ -605,8 +621,8 @@ c.ontent-servc p {
 }
 
 .card-vide {
-  background: rgb(2,0,36);
-  background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
+  background: rgb(22,32,91);
+  background: linear-gradient(34deg, rgba(22,32,91,1) 0%, rgba(3,31,201,1) 50%, rgba(0,144,255,1) 100%);
    color: #fff;
   padding: 20px;
   padding-inline: 15%;
@@ -708,7 +724,7 @@ input[type="checkbox"]:disabled:checked::after {
 }
 
 #titulo_comentario {
-  color: #3c3cb5;
+  color: var(--colortitle-color);
   font-size: var(--fonsztitle-font-size);
   margin-top: 50px;
   margin-bottom: 40px;
@@ -760,7 +776,7 @@ input[type="checkbox"]:disabled:checked::after {
 .botao_fbk {
   padding: 14px 14px;
   width: 35vh;
-  background-color: #3c3cb5;
+  background-color:  #16205b ;
   color: white;
   border: none;
   border-radius: 25px;
@@ -795,7 +811,7 @@ input[type="checkbox"]:disabled:checked::after {
 }
 
 #titulo_atend {
-  color: #3c3cb5;
+  color: var(--colortitle-color);
   font-size: var(--fonsztitle-font-size);
   margin-top: 34px;
   text-align: center;
@@ -816,7 +832,7 @@ input[type="checkbox"]:disabled:checked::after {
 }
 
 #title_coment {
-  color: rgb(255, 255, 255);
+  color: var(--colortitle-color);
   font-size: var(--fonsztitle-font-size);
   margin-top: 34px;
   text-align: center;
@@ -826,8 +842,8 @@ input[type="checkbox"]:disabled:checked::after {
 .elemeto_box_coment{
   width: 50%;
   height: auto;
-  background: rgb(2,0,36);
-  background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);  
+  background: rgb(22,32,91);
+  background: linear-gradient(34deg, rgba(22,32,91,1) 0%, rgba(3,31,201,1) 50%, rgba(0,144,255,1) 100%);
   border-radius: 25px;
   margin: 0 auto;
   display: flex;
@@ -975,7 +991,7 @@ input[type="checkbox"]:disabled:checked::after {
   }
 
   .img_service_logo img {
-    width: 230px;
+    width: 160px;
     height: 125px;
   }
 
@@ -1014,7 +1030,7 @@ input[type="checkbox"]:disabled:checked::after {
   right: 10px;
   padding: 10px;
   background-color: #030749;
-  color: white;
+  color: var(--colortitle-color);
   border-radius: 100%;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -1076,21 +1092,18 @@ input[type="checkbox"]:disabled:checked::after {
 
   .img_apresentação {
     height: auto;
-    width: 100%;
+    width: auto;
   }
 
-  /* Elemento azul */
-
-  .elemento_azul {
-    flex-direction: column;
-    height: 800px;
+  .apresentção_img {
+    display: none;
   }
-
-  .organize-elemente {
-    justify-content: flex-start;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 10px;
+  
+  .apresentção_img_mobile{
+    width: 100%; /* Garante que a largura não ultrapasse o container */
+    height: auto;    /* Mantém a proporção da imagem */
+    display: block;  /* Remove possíveis espaços extras causados por comportamento inline */
+    margin-top: 30px;
   }
 
   /* ---------------------- produtos e servisos ------------------------ */
@@ -1111,6 +1124,10 @@ input[type="checkbox"]:disabled:checked::after {
   .item {
     align-items: normal;
   }
+
+  .logo_serviços{
+    width: 50px;
+  }
   
   /* ---------------------- planos ------------------------ */
 
@@ -1120,14 +1137,14 @@ input[type="checkbox"]:disabled:checked::after {
     max-width: 100%;
     height: auto;
     --carousel-min-width: auto;
-    --card-height: 495px;
+    --card-height: 550px;
   }
 
   .card {
     flex: 0 1 auto;
     max-width: 600px; 
     width: 100%; 
-    height: 780px; 
+    height: 800px; 
     margin: 0 auto; 
   }
 
@@ -1136,8 +1153,8 @@ input[type="checkbox"]:disabled:checked::after {
   }
 
   .carosel_planos {
-    max-height: 780px; 
-    min-height: 760px;
+    max-height: 800px; 
+    min-height: 800px;
     overflow: hidden; 
   }
 
@@ -1148,6 +1165,14 @@ input[type="checkbox"]:disabled:checked::after {
   .img_slid_carosel{
     max-width: 45px;
   }
+
+  .botao_contato {
+    top: 90%;
+    left: 50%;
+    font-size: 22px;
+    width: 80%;
+  }
+  
   /* ---------------------- Velocidade ideal -------------------- */
 
   .card-vide{
