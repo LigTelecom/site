@@ -201,6 +201,7 @@ class CardCarousel extends DraggingEvent {
     }
   }
   
+  
   updateCards(card, data) {
     if (data.x || data.x == 0) {
       card.setAttribute("data-x", data.x)

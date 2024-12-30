@@ -43,7 +43,7 @@ body {
 }
 
 .bk_box{
-  background-color: #9c9c9c35;
+  background-color: #9c9c9c24;
   border-radius: 15px;
 
 }
@@ -499,7 +499,7 @@ button#submitBtn:hover {
   color: white;
   align-items: center;
   font-size: 22px;
-  width: 150px;
+  width: 180px;
   margin-left: 15px;
 }
 
