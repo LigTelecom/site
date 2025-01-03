@@ -1044,10 +1044,15 @@ width: 60px;
 .post_apresentação {
   display: flex;
   /* flex-direction: r; */
-  gap: 50px;
+  /* gap: 50px; */
   width: 100%;
   align-items: center;
   justify-content: center;
+}
+
+
+.img_apresentação{
+  width: 100%;
 }
 
 /* ************ */
@@ -1067,5 +1072,7 @@ width: 60px;
   width: 180px;
   margin: 10px auto;
 }
+
+
 
 }
