@@ -364,7 +364,7 @@
   transition: max-height 0.3s ease-in-out;
 }
 .post-content.expanded {
-  max-height: 1000px; /* Altura grande suficiente para mostrar tudo */
+  max-height: 1500px; /* Altura grande suficiente para mostrar tudo */
 }
 .gradient-overlay {
   content: "";
@@ -447,12 +447,12 @@ text-align: center;
 }
 
 .carousel-buttons {
-    /* position: absolute; */
+    position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 
 .button {
@@ -657,12 +657,16 @@ width: 60px;
   align-items: center;
   width: 50%;
   height: 100%;
+  margin-top: 30px;
 
 }
 
-.organize_minhalig h4{
+.organize_minhalig ul{
   color: white;
   font-size: 18px;
+  text-align: left;
+  justify-content: left;
+  display: ;
 }
 
 .organize_minhalig h3 {
@@ -1044,6 +1048,24 @@ width: 60px;
   width: 100%;
   align-items: center;
   justify-content: center;
+}
+
+/* ************ */
+.organize_cabecario{
+ height: 100px;
+}
+
+.bt_minha_lig button{
+  display: none;
+}
+
+#numero{
+  display: none;
+}
+
+#logo_top{
+  width: 180px;
+  margin: 10px auto;
 }
 
 }
