@@ -853,8 +853,30 @@ a {
   fill: #ffffff;
 }
 
+.post_app{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin: 20px ;
+  gap: 25px;
+}
 
+.logo_app{
+  width: 300px;
+}
 
+.organize_app{
+  margin: 10px;
+  font-size: 12px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-weight: lighter;
+
+}
  /* ---------------------- rodape ------------------------ */
 
  @media screen and (max-width: 1600px) {
