@@ -708,15 +708,15 @@ text-align: center;
 }
 
 /* -----------lig tv---------- */
-.post_litv{
+.post_litv {
   background-image: url("LIG - SITE/teste/fundp_ligTv.png");
-  width: 100vw;
-  height: 400px;
+  max-width: 100vw;
+  height: 45.5vh; 
   z-index: -1;
   display: flex;
   flex-direction: row-reverse;
-  background-size: cover; /* Faz com que a imagem cubra todo o container */
-  background-position: center; /* Centraliza a imagem no container */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -727,19 +727,17 @@ text-align: center;
   align-items: center;
   width: 50%;
   height: 100%;
+  justify-content: flex-end;
+  padding-bottom: 5vh;
 
 }
 
-.organize_ligTv h3 {
-  margin-top: 20px;
-  width: 50%;
-  font-size: 22px;
-}
+
 
 .organize_ligTv button{
   gap: 15px;
   margin-top: 60px;
-  width: 200px;
+  width: 12vw;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
@@ -863,20 +861,27 @@ width: 60px;
 /* ------------------------------------minha lig --------------------*/
 
 .post_minhalig {
-  background-image: url("LIG - SITE/teste/fundo_minhaLig.png");
-  background-size: cover; /* Faz com que a imagem cubra todo o container */
-  background-position: center; /* Centraliza a imagem no container */
-  background-repeat: no-repeat; /* Impede que a imagem seja repetida */
+  /* background-image: url("LIG - SITE/teste/fundo_minhaLig.png"); */
+
   width: 100%;
   height: 500px;
   z-index: -1;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+
   margin-top: 80px;
-  padding: 50px;
+  padding-top: 50px;
   font-size: 22px;
 }
 
+.org_post_minhalig{
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+justify-content: flex-end;
+margin: 0 auto;
+
+}
 
 .organize_minhalig{
   display: flex;
@@ -885,9 +890,22 @@ width: 60px;
   align-items: flex-start;
   width: 50%;
   height: 100%;
-  margin-top: 3vw;
-  margin-left: 3vh;
+  /* margin-top: 3vw;
+  margin-left: 3vh; */
+  height: 400px;
 
+}
+
+.logo_lig_minhalig{
+
+}
+
+.elemento_azul{
+width: 100%;
+height: 400px;
+background-color: #16205b;
+display: flex;
+align-items: flex-end;
 }
 
 .organize_minhalig ul{
@@ -909,8 +927,9 @@ width: 60px;
 
 .organize_minhalig button{
   gap: 15px;
-  margin-top: 60px;
-  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 18vh;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
@@ -919,6 +938,7 @@ width: 60px;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
+ 
   
 }
 
@@ -1310,14 +1330,14 @@ width: 60px;
   background-color: #161E5C;
   height: 750px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .organize_minhalig{
   display: flex;
   flex-direction: column;
   justify-content:  space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: auto;
 
@@ -1337,6 +1357,11 @@ width: 60px;
 .mobile_fundo{
   margin-top:  40px;
   display: block;
+}
+
+.logo_lig_minhalig{
+  width: 360px;
+  height: autos;
 }
 
 /* ---------------------- introdução ------------------------ */
