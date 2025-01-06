@@ -728,7 +728,7 @@ text-align: center;
   width: 50%;
   height: 100%;
   justify-content: flex-end;
-  padding-bottom: 5vh;
+  padding-bottom: 8vh;
 
 }
 
@@ -737,7 +737,7 @@ text-align: center;
 .organize_ligTv button{
   gap: 15px;
   margin-top: 60px;
-  width: 12vw;
+  width: 10vw;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
