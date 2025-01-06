@@ -130,6 +130,56 @@
   display: none;
 }
 
+/* ----------------- cabeçario mobile ----------------- */
+.organize_cabecario_mobile{
+  background-color: #16205B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: none;
+}
+
+.bt_min_lig_mobile{
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+.bt_minha_lig_mobile button{
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 22px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  text-align: center;
+  width: 10vh;
+  align-items: center;
+  display: flex;
+  /* justify-content: space-around; */
+  /* gap: 1%; */
+  font-weight: bold;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.icon_bt_mobile{
+  width: 14px;
+  height: auto;
+  fill: #16205b;
+}
+.btn_abrir_menu{
+  right: ;: 10px;
+}
+
+.org_cabeçario_mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 60vh; */
+  /* gap: 2vh; */
+}
+
 /* ---- menu ------ */
   .CABEÇARIO{
     display: flex;
@@ -1157,8 +1207,12 @@ body{
 
   /* ---------------------- menu ---------------------- */
 
-  .menu {
+
+  .organize_cabecario{
     display: none;
+  }
+  .organize_cabecario_mobile {
+    display: block;
   }
 
   .logo_top {
@@ -1188,11 +1242,6 @@ body{
   right: 25%;
   opacity: 1; 
   z-index: 99;
-  }
-
-
-  .bt_minha_lig{
-  display: none;
   }
 
 
@@ -1386,13 +1435,8 @@ width: 60px;
  height: 100px;
 }
 
-.bt_minha_lig button{
-  display: none;
-}
 
-#numero{
-  display: none;
-}
+
 
 #logo_top{
   width: 180px;
