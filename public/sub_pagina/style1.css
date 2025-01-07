@@ -1038,6 +1038,49 @@ a {
   list-style: none;
   color: white;
 }
+
+/* ------- pagina serviços lig tv ------ */
+
+.post_seerviços_lig_tv{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin: 20px ;
+  gap: 25px;
+}
+
+.logo_serviços{
+  width: 500px;
+}
+
+.organize_serviçoes_Ligtv{
+  margin: 10px;
+  font-size: 12px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  font-weight: lighter;
+
+}
+
+.organize_serviçoes_Ligtv ul{
+  margin: 15px;
+}
+
+.organize_serviçoes_Ligtv li{
+  margin-top: 15px;
+}
+
+.img_org_serviços{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
  /* ---------------------- rodape ------------------------ */
 
  @media screen and (max-width: 1600px) {

@@ -152,20 +152,29 @@
   background-color: rgb(255, 255, 255);
   border: none;
   text-align: center;
-  width: 10vh;
+  width: 12vh;
   align-items: center;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   /* gap: 1%; */
   font-weight: bold;
   font-size: 10px;
   margin-bottom: 5px;
+  box-shadow: none
+  
 }
 
 .icon_bt_mobile{
-  width: 14px;
+  width: 18px;
   height: auto;
   fill: #16205b;
+  
+}
+
+.btn_abrir_menu{
+right: 10px;
+top: 10px;
+  position: absolute;
 }
 
 
@@ -977,7 +986,7 @@ align-items: flex-end;
   gap: 15px;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 18vh;
+  width: 20vh;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
