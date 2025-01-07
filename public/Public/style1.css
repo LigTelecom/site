@@ -793,8 +793,8 @@ text-align: center;
 
 .organize_ligTv button{
   gap: 15px;
-  margin-top: 60px;
-  width: 10vw;
+  margin-top: 10px;
+  width: 8vw;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
@@ -1218,6 +1218,9 @@ body{
   .organize_cabecario{
     display: none;
   }
+
+  
+
   .organize_cabecario_mobile {
     display: block;
   }
@@ -1266,7 +1269,7 @@ body{
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
-  width: 90%;
+  width: 100%;
 }
 
 .organize_premiun{
@@ -1274,25 +1277,31 @@ body{
 }
 
 .post_litv{
-  background-image: url("LIG - SITE/teste/fundo_mobile_ligTV.png");
-  width: 100%;
-  height: 584px;
-  z-index: -1;
+  background-image: none;
+  width: 100vw;
+  height: 90vh;
+  
   display: flex;
   justify-content: center;
-  background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-size: cover;
-    background-position: center; 
+
 }
 
+
+
+.fundo_ligtv_mobile img{
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: auto;
+}
 
 .organize_ligTv{
 margin-top: 25px;
   align-items: center;
-  width: 90%;
-  height: auto;
+  width: 95%;
+  height: 50%;
   text-align: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 
 }
 
@@ -1304,7 +1313,7 @@ margin-top: 25px;
 
 .organize_ligTv button{
   width: 160px;
-  
+ 
   border: none;
   display: flex;
   flex-direction: row;
@@ -1317,10 +1326,10 @@ margin-top: 25px;
 .org_bt_ligTV{
   flex-direction: row;
   gap: 5px;
- 
+  /* top: 150px; */
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .logo_lig_tv{

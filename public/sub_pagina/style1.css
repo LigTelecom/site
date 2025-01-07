@@ -660,10 +660,17 @@ text-align: center;
   flex-direction: row;
   gap: 10px;
   display: flex;
+  justify-content: center;
+  margin: 5px;
 }
 
 .logo_lig_tv{
   width: 110px;
+}
+
+.tutorial_ligtv{
+  display: flex;
+justify-content: center;
 }
 
 /* ------------contato-------------- */
@@ -1050,7 +1057,7 @@ a {
 }
 
 .logo_serviços{
-  width: 500px;
+  width: 600px;
 }
 
 .organize_serviçoes_Ligtv{
@@ -1079,6 +1086,47 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+}
+
+.org_seção{
+  width: 45vw;
+  text-align: center;
+  margin: 0 auto;
+ 
+}
+
+.seção_acesso_apps{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.org_acessos_apps{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.elemento_linha{
+  width: 2px;
+  height: 80px;
+  background-color: #333;
+}
+.org_acessos_apps button{
+  margin-top: 5px;
+  width: 10vw;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder; */
+  
 }
 
  /* ---------------------- rodape ------------------------ */
