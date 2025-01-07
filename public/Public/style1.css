@@ -9,6 +9,8 @@
    
     p{
       color: var(--colortitle-color);
+      margin: 0;
+      padding: 0;
     }
 
     a {
@@ -192,6 +194,7 @@ top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
    
     
   }
@@ -203,6 +206,10 @@ top: 10px;
 
   .organize_cabecario{
     background-color: #16205B;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #logo_top{
@@ -215,6 +222,22 @@ top: 10px;
     height: auto;
     fill: #16205b;
   }
+
+  .org_icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+
+  }
+
+.organize_botoes_menu{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
   .bt_minha_lig button{
     align-items: center;
     padding: 8px 10px;
@@ -227,20 +250,30 @@ top: 10px;
     display: flex;
     justify-content: space-around;
     gap: 1%;
+    font-weight: bold;
+    color: #16205b;
+    box-shadow: none;
   }
 
   .menu{
     display: flex;
-    justify-content: space-around;
-    gap: 2%;
-    padding: 2% 25vw;
+    justify-content: flex-end;
+    gap: 8%;
     list-style-type: none;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
+  }
+
+  .menu ul{
+    padding: 0px 0px;
   }
 
   .menu a{
     color: #ffffff;
     font-weight: bold;
+    
+  }
+  .menu li{
+    width: 100%;
   }
 
 /*------------------ pageup ----------------------- */
@@ -370,11 +403,24 @@ button#submitBtn:hover {
 
   /* ------------------slider--------------------------------- */
 
+.org_slid_mobile{
+  display: none;
+}
+
+.org_slid{
+  width: 100vw;
+  height: 65vh;
+}
+
   .slider {
-    position: relative;
+    position: absolute;
     width: 100%;
     /* height: 100%; */
     overflow: hidden;
+  }
+
+  #Bt_instalação{
+    
   }
 
   .slides {
@@ -676,8 +722,8 @@ button#submitBtn:hover {
 /* ----------------- carosel --------------- */
 
 .carousel {
-    width: 80%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 60vw;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -692,7 +738,7 @@ text-align: center;
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 10px;
+    /* gap: 10px; */
     margin-top: 20px;
 }
 
@@ -726,17 +772,25 @@ text-align: center;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
 }
 
 .button {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 0px 10px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
+    border-radius: 100%;
+    font-size: 22px;
+    box-shadow: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .button:hover {
@@ -775,6 +829,10 @@ text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.fundo_ligtv_mobile img{
+  display: none;
 }
 
 .organize_ligTv{
@@ -1293,6 +1351,7 @@ body{
   z-index: -1;
   width: 100vw;
   height: auto;
+  display: block;
 }
 
 .organize_ligTv{
@@ -1337,6 +1396,16 @@ margin-top: 25px;
   
 }
 /* ---------  */
+
+.org_slid{
+display: none;
+
+}
+
+.org_slid_mobile{
+display: block;
+height: 412px;
+}
 
 /* ---------fale conosco------- */
  .post_contato{
