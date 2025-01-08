@@ -412,6 +412,7 @@ button#submitBtn:hover {
   height: 65vh;
 }
 
+
   .slider {
     position: absolute;
     width: 100%;
@@ -419,9 +420,7 @@ button#submitBtn:hover {
     overflow: hidden;
   }
 
-  #Bt_instalação{
-    
-  }
+
 
   .slides {
     display: flex;
@@ -761,10 +760,7 @@ text-align: center;
     color: #333;
 }
 
-.carousel-item.active {
-    /* opacity: ; */
-    /* transform: scale(1.2); Foco no item do meio */
-}
+
 
 .carousel-buttons {
     position: absolute;
@@ -951,9 +947,7 @@ width: 60px;
   padding: 10px;
 }
 
-.post_serviçoss{
-  img_serviçoss: 15px;
-}
+
 
 .img_servisos{
   width: 210px;
@@ -1013,9 +1007,7 @@ margin: 0 auto;
 
 }
 
-.logo_lig_minhalig{
 
-}
 
 .elemento_azul{
 width: 100%;

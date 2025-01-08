@@ -10,9 +10,9 @@ btnMenu.addEventListener('click', () => {
     Menu.classList.add('abrir-menu');
 });
 
-btnMenuflut.addEventListener('click', () => {
-    Menu.classList.add('abrir-menu');
-});
+// btnMenuflut.addEventListener('click', () => {
+//     Menu.classList.add('abrir-menu');
+// });
 
 // Fechar o menu geral ao clicar no overlay
 overlay.addEventListener('click', () => {

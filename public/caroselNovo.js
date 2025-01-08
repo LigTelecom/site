@@ -1,53 +1,47 @@
-const track = document.querySelector('.carousel-track');
-const items = Array.from(track.children);
-const nextButton = document.querySelector('.next-01');
-const prevButton = document.querySelector('.prev-01');
-const indicators = document.querySelectorAll('.indicator');
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselContainer = document.querySelector('.carousel');
+    const track = carouselContainer.querySelector('.carousel-track');
+    const items = Array.from(track.children);
+    const prevButton = document.getElementById('prev-01');
+    const nextButton = document.getElementById('next-01');
 
-let currentIndex = 2; // Começa com o terceiro item (do meio)
+    const itemsVisible = 5; // Quantidade de itens visíveis
+    let currentIndex = 0;
+    const totalItems = items.length;
 
-function updateCarousel(index) {
-    items.forEach((item, i) => {
-        item.classList.remove('active');
-        const offset = i - index;
-        if (offset === 0) {
-            item.classList.add('active');
+    // Configura a largura do track e dos itens
+    track.style.display = 'flex';
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.width = `${(100 * totalItems) / itemsVisible}%`;
+
+    items.forEach((item) => {
+        item.style.flex = `0 0 ${100 / itemsVisible}%`; // Cada item ocupa 1/5 da largura visível
+    });
+
+    function updateCarousel(index) {
+        track.style.transform = `translateX(-${(index * 100) / itemsVisible}%)`;
+    }
+
+    function showNextSlide() {
+        currentIndex++;
+        if (currentIndex > totalItems - itemsVisible) {
+            currentIndex = 0; // Reinicia no início
         }
-    });
-
-    // Manter o carrossel em loop contínuo
-    const offsetPercentage = -20 * (index); // Desloca os itens para a esquerda
-    track.style.transform = `translateX(${offsetPercentage}%)`;
-
-    indicators.forEach((indicator, i) => {
-        indicator.classList.toggle('active', i === index);
-    });
-}
-
-function showNextSlide() {
-    currentIndex = (currentIndex + 1) % items.length; // Volta para o começo se chegar ao final
-    updateCarousel(currentIndex);
-}
-
-function showPrevSlide() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length; // Volta ao final se voltar ao começo
-    updateCarousel(currentIndex);
-}
-
-nextButton.addEventListener('click', showNextSlide);
-prevButton.addEventListener('click', showPrevSlide);
-
-indicators.forEach((indicator, i) => {
-    indicator.addEventListener('click', () => {
-        currentIndex = i;
         updateCarousel(currentIndex);
-    });
+    }
+
+    function showPrevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = totalItems - itemsVisible; // Vai para o último conjunto visível
+        }
+        updateCarousel(currentIndex);
+    }
+
+    // Navegação manual
+    nextButton.addEventListener('click', showNextSlide);
+    prevButton.addEventListener('click', showPrevSlide);
+
+    // Navegação automática
+    setInterval(showNextSlide, 3000); // Muda automaticamente a cada 3 segundos
 });
-
-// Loop contínuo - sem intervalo para não parar
-setInterval(() => {
-    showNextSlide();
-}, 3000);
-
-// Atualiza o carrossel na inicialização
-updateCarousel(currentIndex);
