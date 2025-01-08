@@ -1,22 +1,30 @@
-const modal = document.getElementById('appModal');
-const openButtons = document.querySelectorAll('.modal-button'); // Seleciona todos os botões
-const closeButton = document.querySelector('.close-button');
+// Script para gerenciar o primeiro modal
+document.addEventListener('DOMContentLoaded', () => {
+    const openButtons = document.querySelectorAll('.open-modal1'); // Seleciona todos os botões com a classe "open-modal1"
+    const closeModal1 = document.getElementById('closeModal1');
+    const modal1 = document.getElementById('appModal');
 
-// Adiciona evento de clique a cada botão
-openButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        modal.style.display = 'flex';
-    });
-});
+    // Verificar se os elementos necessários existem
+    if (modal1 && closeModal1) {
+        // Adicionar evento de clique a cada botão que abre o Modal 1
+        openButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal1.style.display = 'flex';
+            });
+        });
 
-// Fecha o modal ao clicar no botão de fechar
-closeButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
+        // Fechar o Modal 1 ao clicar no botão de fechar
+        closeModal1.addEventListener('click', () => {
+            modal1.style.display = 'none';
+        });
 
-// Fecha o modal ao clicar fora dele
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.style.display = 'none';
+        // Fechar o Modal 1 ao clicar fora do conteúdo
+        window.addEventListener('click', (e) => {
+            if (e.target === modal1) {
+                modal1.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('O modal ou o botão de fechamento não foram encontrados no DOM.');
     }
 });

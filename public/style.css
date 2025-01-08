@@ -645,6 +645,7 @@ button#submitBtn:hover {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .app-grid {
@@ -1502,6 +1503,14 @@ width: 60px;
   margin: 10px auto;
 }
 
+#pageUpButton {
+  right: 10px;
+  z-index: 99;
+}
 
+.Botao_whtt{
+  right: 10px;
+  z-index: 99;
+}
 
 }
