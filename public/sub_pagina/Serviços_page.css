@@ -1,0 +1,721 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    --fonsztitle-font-size: 4vh;
+    --colortitle-color:  #16205b;;
+    /* outline: 1px solid red; */
+   
+    p{
+      color: var(--colortitle-color);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+      }
+
+}
+
+button{
+    /* align-items: center; */
+    background-color: #f5f2f2;
+    box-shadow: 
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+
+}
+
+  header,
+  main,
+  footer {
+    display: block;
+  }
+
+/* ----------------------------menu mobile ------------------------- */
+
+.menu_mobile{
+  display: flex; 
+  justify-content: flex-start; 
+  flex-direction: column;
+  padding: 0;
+}
+
+.menu_mobile {
+  background-color: rgb(55, 47, 160);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 0;
+  overflow-y: auto; 
+  overflow: hidden;
+  transition: .2s;
+  font-weight: bold;
+}
+
+.bt_min_lig{
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+.bt_min_lig button {
+  text-align: center;
+  background-color: #2bac52;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 50vw; 
+  padding: 8px 2px;
+  outline: none;
+  border: none; 
+  margin-top: 60vw;
+}
+
+.menu_mobile.abrir-menu{
+  width: 65%;
+}
+
+.menu_mobile.abrir-menu ~ .orveley-menu{
+  display: block;
+}
+
+.menu_mobile nav ul {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+
+.menu_mobile nav ul li {
+  position: relative; 
+  margin-bottom: 10px; 
+}
+
+.menu_mobile nav ul li a {
+  font-size: 20px;
+  padding: 20px 4%;
+  font-weight: 300;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.menu_mobile nav ul li a:hover {
+  color: #0056b3; 
+}
+
+.orveley-menu{
+  background-color: #0000009d;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  display: none;
+}
+
+/* ----------------- cabeçario mobile ----------------- */
+
+.organize_cabecario_mobile{
+  background-color: #16205B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: none;
+}
+
+.bt_min_lig_mobile{
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+.bt_minha_lig_mobile button{
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 22px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  text-align: center;
+  width: 12vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 10px;
+  margin-bottom: 5px;
+  box-shadow: none
+}
+
+.icon_bt_mobile{
+  width: 18px;
+  height: auto;
+  fill: #16205b;
+}
+
+.btn_abrir_menu{
+right: 10px;
+top: 10px;
+  position: absolute;
+}
+
+
+.org_cabeçario_mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---- menu ------ */
+
+  .CABEÇARIO{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .CABEÇARIO h3{
+    color: #ffffff;
+    font-size: 3vh;
+  }
+
+  .organize_cabecario{
+    background-color: #16205B;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #logo_top{
+    width: 220px;
+    margin-top: 10px;
+  }
+
+  .icon_bt{
+    width: 20px;
+    height: auto;
+    fill: #16205b;
+  }
+
+  .org_icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+.organize_botoes_menu{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bt_minha_lig button{
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 22px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  text-align: center;
+  width: 15vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 1%;
+  font-weight: bold;
+  color: #16205b;
+  box-shadow: none;
+}
+
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  gap: 8%;
+  list-style-type: none;
+  font-size: 1.1vw;
+}
+
+.menu ul{
+  padding: 0px 0px;
+}
+
+.menu a{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.menu li{
+  width: 100%;
+}
+
+/* ---------------------------- Trabalhe conosco ------------------------- */
+
+.tbr-corpo{
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#cardContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 999;  
+}
+
+.card-tbr {
+  background-color: #fff;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-tbr h2 {
+  margin-bottom: 10px;
+  color: #020024;
+  font-size: 2.8vh;
+}
+
+.tbr_imp label {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+  color: #020024;
+  font-size: 2vh;
+}
+
+.tbr_imp > input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button#submitBtn {
+  margin-top: 10px;
+  padding: 6px;
+  background-color: #020024;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 80px;  
+}
+
+button#submitBtn:hover {
+  background-color: #b3c233;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* -----Cabeçario ceção ---- */
+.cabeçaroa_seção{
+  background-color: #0056b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+  gap: 2px;
+  color: white;
+  font-size: 18px;
+}
+
+.cabeçaroa_seção ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* ---- seção tutorial ---- */
+
+.tutorial_ligtv{
+  display: flex;
+  justify-content: center;
+}
+
+/* ------- LIG fibra ------ */
+
+.org_seção_infor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 12px auto;
+  max-width: 1600px;
+}
+
+.org_text_infor{
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infor{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #16205b;
+}
+
+.infor img{
+  width: 250px;
+}
+
+/* ------- pagina serviços ------ */
+
+.post_seerviços_lig_tv{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin: 20px ;
+  gap: 25px;
+}
+
+.logo_serviços{
+  width: 600px;
+}
+
+.organize_serviçoes_Ligtv{
+  margin: 10px;
+  font-size: 16px;
+  width: 30vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+.organize_serviçoes_Ligtv ul{
+  margin: 15px;
+}
+
+.organize_serviçoes_Ligtv li{
+  margin-top: 15px;
+}
+
+.img_org_serviços{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.org_seção{
+  width: 45vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.seção_acesso_apps{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.org_acessos_apps{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.elemento_linha{
+  width: 2px;
+  height: 80px;
+  background-color: #333;
+}
+.org_acessos_apps button{
+  margin-top: 5px;
+  width: 10vw;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.logo-serviço{
+  width: 200px;
+}
+ 
+/*---------------------rodape----------------------*/
+
+.rodape {
+  width: 100%;
+  height: auto;
+  top: 25px;
+  align-items: center;
+}
+
+.elemento-box_2 {
+  width: 100%;
+  height: fit-content;
+  min-height: 400px;
+  background-color: rgb(23, 10, 44);
+  z-index: -1;
+  justify-content: center;
+}
+
+.org_rod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 6%;
+  top: 25px;
+  height: auto;
+  justify-content: space-between;
+  gap: 6%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.rodape n6 {
+  color: white;
+}
+
+.rodape p {
+  color: white;
+  margin-top: 15px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.endereços {
+  width: 280px;
+}
+
+.logo-rod {
+  width: 15%;
+  min-width: 150px;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.logo-rod img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+.post_app{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin: 20px ;
+  gap: 25px;
+}
+
+.logo_app{
+  width: 300px;
+}
+
+.organize_app{
+  margin: 10px;
+  font-size: 12px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  font-weight: lighter;
+}
+
+.organize_app ul{
+  margin: 15px;
+}
+
+.organize_app li{
+  margin-top: 15px;
+}
+
+.img_org_app{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+ /* ---------------------- rodape ------------------------ */
+
+ @media screen and (max-width: 1600px) {
+  
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 640px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+
+ .org_rod {
+  text-align: center;
+}
+
+.organize_cabecario{
+  display: none;
+}
+
+
+/* ---------- Menu -------- */
+.organize_cabecario_mobile {
+  display: block;
+}
+
+.logo_top {
+  height: 14vw;
+}
+
+.icon_bt{
+  display: block;
+}
+
+.item-fixo {
+position: absolute;
+top: 90%; 
+right: 10%;
+padding: 10px;
+background-color: #030749;
+color: var(--colortitle-color);
+border-radius: 100%;
+box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+opacity: 0;
+transition: opacity 0.3s ease-in-out; 
+}
+
+.fixed {
+position: fixed;
+top: 90%; 
+right: 25%;
+opacity: 1; 
+z-index: 99;
+}
+
+
+/* ******* Cabeçario ***** */
+
+.organize_cabecario{
+ height: 100px;
+}
+
+.bt_minha_lig button{
+  display: none;
+}
+
+#numero{
+  display: none;
+}
+
+#logo_top{
+  width: 180px;
+  margin: 10px auto;
+}
+
+/* ----------- serviço seção ---------------- */
+.logo_serviços{
+  width: 600px;
+}
+
+.organize_serviçoes_Ligtv{
+  width: 100%;
+}
+
+.logo_serviços{
+  width: 100vw;
+}
+
+.logo-serviço{
+  width: 200px;
+}
+
+.elemento_linha{
+  width: 180px;
+  height: 2px;
+}
+
+.tutorial_ligtv img{
+  width: 100%;
+}
+
+.org_acessos_apps button{
+  width: 18vw;
+}
+
+.org_seção{
+  width: 90vw;
+}
+
+.seção_acesso_apps{
+  justify-content: center;
+  align-items: center;
+}
+
+}
