@@ -245,7 +245,7 @@ top: 10px;
     background-color: rgb(255, 255, 255);
     border: none;
     text-align: center;
-    width: 15vh;
+    width: 120px;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -261,6 +261,8 @@ top: 10px;
     gap: 8%;
     list-style-type: none;
     font-size: 1.1vw;
+    white-space: nowrap;
+    align-items: center;
   }
 
   .menu ul{
@@ -669,7 +671,23 @@ button#submitBtn:hover {
   display: block;
 }
 
-/* -------------------- */
+/* ------------- Botao whatsapp ------- */
+
+.Botao_whtt{
+  position: fixed;
+  border-radius: 100%;
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  bottom: 100px;
+  right: 40px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  */
 
 .post-container {
   position: relative;
@@ -720,98 +738,64 @@ button#submitBtn:hover {
 
 /* ----------------- carosel --------------- */
 
-.carousel {
-    width: 100%;
-    max-width: 60vw;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 60px;
-    z-index: 1;
+.carousel-container {
+  position: relative;
+  width: 80vw;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px auto;
 }
 
-.carousel h2, .carousel h3{
-text-align: center;
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    /* gap: 10px; */
-    margin-top: 20px;
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
 .carousel-item {
-    flex: 0 0 20%; /* 5 itens visíveis */
-    /* opacity: 0.5; */
-    transform: scale(0.8);
-    transition: transform 0.3s, opacity 0.3s;
-    text-align: center;
+  flex: 0 0 20%; /* Exibe 5 itens por vez (100% / 5 = 20%) */
+  text-align: center;
 }
 
 .carousel-item img {
-    width: 100px;
-    height: 100px;
-}
-
-.carousel-item p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
+  width: 100px;
+  height: auto;
 }
 
 
 
-.carousel-buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+ .button_prev,
+ .button_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  z-index: 10;
+  font-size: 18px;
+  border-radius: 5px;
+  border-radius: 50%;
+  box-shadow: none;
 }
 
-.button {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 0px 10px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 100%;
-    font-size: 22px;
-    box-shadow: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+ .button_prev {
+  left: 10px; /* Alinhar à esquerda */
 }
 
-.button:hover {
-    background: rgba(0, 0, 0, 0.8);
+ .button_next {
+  right: 10px; /* Alinhar à direita */
 }
 
-.indicator-container {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.indicator {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background: #007bff;
+ .button_prev:hover,
+ .button_next:hover {
+  background: rgba(0, 0, 0, 0.8); /* Mudar o fundo no hover */
 }
 
 /* -----------lig tv---------- */
@@ -848,7 +832,7 @@ text-align: center;
 .organize_ligTv button{
   gap: 15px;
   margin-top: 10px;
-  width: 8vw;
+  width: 120px;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
@@ -930,6 +914,7 @@ width: 60px;
   flex-direction: row;
   white-space: normal;
   flex-wrap: wrap;
+
 }
 
 .post_serviços{
@@ -972,14 +957,11 @@ width: 60px;
 /* ------------------------------------minha lig --------------------*/
 
 .post_minhalig {
-  /* background-image: url("LIG - SITE/teste/fundo_minhaLig.png"); */
-
   width: 100%;
   height: 500px;
   z-index: -1;
   display: flex;
   flex-direction: row-reverse;
-
   margin-top: 80px;
   padding-top: 50px;
   font-size: 22px;
@@ -991,7 +973,6 @@ flex-direction: row;
 align-items: flex-end;
 justify-content: flex-end;
 margin: 0 auto;
-
 }
 
 .organize_minhalig{
@@ -1004,10 +985,7 @@ margin: 0 auto;
   /* margin-top: 3vw;
   margin-left: 3vh; */
   height: 400px;
-
 }
-
-
 
 .elemento_azul{
 width: 100%;
@@ -1038,7 +1016,7 @@ align-items: flex-end;
   gap: 15px;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 20vh;
+  width: 160px;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
@@ -1053,6 +1031,7 @@ align-items: flex-end;
 
 .img_serviçoss{
   width: 69vh;
+  
 }
 
 .mobile_fundo{
@@ -1241,6 +1220,7 @@ a {
  @media screen and (max-width: 1800px) {
   .organize_serviçoes{
     justify-content: center;
+    align-items: flex-start;
   }
   
 }

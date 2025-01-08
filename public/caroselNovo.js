@@ -1,47 +1,78 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const carouselContainer = document.querySelector('.carousel');
-    const track = carouselContainer.querySelector('.carousel-track');
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector("#carousel-01");
+    const track = carousel.querySelector(".carousel-track");
     const items = Array.from(track.children);
-    const prevButton = document.getElementById('prev-01');
-    const nextButton = document.getElementById('next-01');
-
-    const itemsVisible = 5; // Quantidade de itens visíveis
-    let currentIndex = 0;
+    const prevButton = document.querySelector("#prev-01");
+    const nextButton = document.querySelector("#next-01");
+  
+    const itemWidth = items[0].getBoundingClientRect().width;
     const totalItems = items.length;
-
-    // Configura a largura do track e dos itens
-    track.style.display = 'flex';
-    track.style.transition = 'transform 0.5s ease-in-out';
-    track.style.width = `${(100 * totalItems) / itemsVisible}%`;
-
-    items.forEach((item) => {
-        item.style.flex = `0 0 ${100 / itemsVisible}%`; // Cada item ocupa 1/5 da largura visível
+  
+    let currentIndex = 0;
+  
+    // Clonar os itens no início e no final
+    items.slice(0, 5).forEach((item) => {
+      const clone = item.cloneNode(true);
+      track.appendChild(clone);
     });
-
-    function updateCarousel(index) {
-        track.style.transform = `translateX(-${(index * 100) / itemsVisible}%)`;
+  
+    items.slice(-5).forEach((item) => {
+      const clone = item.cloneNode(true);
+      track.prepend(clone);
+    });
+  
+    const newItems = Array.from(track.children);
+    const newTotalItems = newItems.length;
+  
+    // Reposicionar o carrossel para o início "real"
+    track.style.transition = "none";
+    track.style.transform = `translateX(-${5 * itemWidth}px)`;
+  
+    function moveCarousel() {
+      track.style.transition = "transform 0.5s ease";
+      track.style.transform = `translateX(-${(currentIndex + 5) * itemWidth}px)`;
     }
-
-    function showNextSlide() {
-        currentIndex++;
-        if (currentIndex > totalItems - itemsVisible) {
-            currentIndex = 0; // Reinicia no início
-        }
-        updateCarousel(currentIndex);
+  
+    function nextSlide() {
+      currentIndex++;
+      moveCarousel();
+  
+      // Reiniciar para o início "real" sem animação
+      if (currentIndex === totalItems) {
+        setTimeout(() => {
+          track.style.transition = "none";
+          currentIndex = 0;
+          track.style.transform = `translateX(-${5 * itemWidth}px)`;
+        }, 500);
+      }
     }
-
-    function showPrevSlide() {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = totalItems - itemsVisible; // Vai para o último conjunto visível
-        }
-        updateCarousel(currentIndex);
+  
+    function prevSlide() {
+      currentIndex--;
+      moveCarousel();
+  
+      // Reiniciar para o final "real" sem animação
+      if (currentIndex < 0) {
+        setTimeout(() => {
+          track.style.transition = "none";
+          currentIndex = totalItems - 1;
+          track.style.transform = `translateX(-${(currentIndex + 5) * itemWidth}px)`;
+        }, 500);
+      }
     }
-
-    // Navegação manual
-    nextButton.addEventListener('click', showNextSlide);
-    prevButton.addEventListener('click', showPrevSlide);
-
-    // Navegação automática
-    setInterval(showNextSlide, 3000); // Muda automaticamente a cada 3 segundos
-});
+  
+    nextButton.addEventListener("click", nextSlide);
+    prevButton.addEventListener("click", prevSlide);
+  
+    // Movimento automático
+    let autoSlide = setInterval(nextSlide, 3000);
+  
+    // Pausar o movimento automático ao interagir com os botões
+    [prevButton, nextButton].forEach((button) => {
+      button.addEventListener("click", () => {
+        clearInterval(autoSlide);
+        autoSlide = setInterval(nextSlide, 3000);
+      });
+    });
+  });
+  
