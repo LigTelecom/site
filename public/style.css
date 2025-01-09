@@ -308,6 +308,7 @@ top: 10px;
   opacity: 0; /* Começa invisível */
   transform: translateY(20px); /* Começa deslocado */
   transition: opacity 0.3s, transform 0.3s; /* Transição suave */
+  z-index: 99;
 }
 
 #pageUpButton.show {
@@ -516,11 +517,25 @@ button#submitBtn:hover {
   padding: 10px 15px;
   color: #fff;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   flex-direction: column;
   width: 245px;
   height: 158px;
+  align-items: center;
+}
+
+#empresas{
+  background-color: #050523;
+}
+
+#list_empresa{
+  width: 70vw;
+}
+
+#font_Empresa{
+  color: black;
+  width: 150px;
 }
 
 .plan-info ul {
@@ -702,6 +717,7 @@ button#submitBtn:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99;
 }
 
 /*  */
@@ -985,6 +1001,7 @@ width: 60px;
   margin-top: 80px;
   padding-top: 50px;
   font-size: 22px;
+
 }
 
 .org_post_minhalig{
@@ -993,6 +1010,7 @@ flex-direction: row;
 align-items: flex-end;
 justify-content: flex-end;
 margin: 0 auto;
+
 }
 
 .organize_minhalig{
@@ -1186,6 +1204,8 @@ a {
   margin-top: 15px;
   line-height: 1.2;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .endereços {
@@ -1456,10 +1476,14 @@ width: 60px;
 
 .post_minhalig{
   background-image: none;
-  background-color: #161E5C;
+
   height: 750px;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.elemento_azul{
+  height: 750px;
 }
 
 .organize_minhalig{
