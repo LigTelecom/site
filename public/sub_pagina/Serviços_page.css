@@ -36,7 +36,6 @@ button{
   }
 
 /* ----------------------------menu mobile ------------------------- */
-
 .menu_mobile{
   display: flex; 
   justify-content: flex-start; 
@@ -45,7 +44,7 @@ button{
 }
 
 .menu_mobile {
-  background-color: rgb(55, 47, 160);
+  background-color: #16205b;
   color: white;
   height: 100vh;
   position: fixed;
@@ -71,11 +70,15 @@ button{
   border-radius: 25px;
   font-weight: bold;
   font-size: 18px;
-  width: 50vw; 
+  width: 200px; 
   padding: 8px 2px;
   outline: none;
   border: none; 
-  margin-top: 60vw;
+  margin-top: 20px;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
 .menu_mobile.abrir-menu{
@@ -96,6 +99,7 @@ button{
 .menu_mobile nav ul li {
   position: relative; 
   margin-bottom: 10px; 
+  margin-inline: 10px;
 }
 
 .menu_mobile nav ul li a {
@@ -345,6 +349,22 @@ button#submitBtn:hover {
 
 .close-btn:hover {
   color: #333;
+}
+
+/* ------------- Botao whatsapp ------- */
+
+.Botao_whtt{
+  position: fixed;
+  border-radius: 100%;
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* -----Cabeçario ceção ---- */
@@ -717,6 +737,11 @@ z-index: 99;
 .seção_acesso_apps{
   justify-content: center;
   align-items: center;
+}
+
+.Botao_whtt{
+  right: 25px;
+  z-index: 99;
 }
 
 }

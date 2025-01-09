@@ -37,6 +37,348 @@
     display: block;
   }
 
+
+  /* ----------- menu ------ */
+  .menu_mobile{
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .menu_mobile {
+    background-color: #16205b;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 0;
+    overflow-y: auto; 
+    overflow: hidden;
+    transition: .2s;
+    font-weight: bold;
+  }
+  
+  .bt_min_lig{
+    justify-content: center;
+    margin: 0 auto; 
+  }
+  
+  .bt_min_lig button {
+    text-align: center;
+    background-color: #2bac52;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px; 
+    padding: 8px 2px;
+    outline: none;
+    border: none; 
+    margin-top: 20px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .menu_mobile.abrir-menu{
+    width: 65%;
+  }
+  
+  .menu_mobile.abrir-menu ~ .orveley-menu{
+    display: block;
+  }
+  
+  .menu_mobile nav ul {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+  }
+  
+  .menu_mobile nav ul li {
+    position: relative; 
+    margin-bottom: 10px; 
+    margin-inline: 10px;
+  }
+  
+  .menu_mobile nav ul li a {
+    font-size: 20px;
+    padding: 20px 4%;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .menu_mobile nav ul li a:hover {
+    color: #0056b3; 
+  }
+  
+  .orveley-menu{
+    background-color: #0000009d;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    display: none;
+  }
+  
+  /* ----------------- cabeçario mobile ----------------- */
+  .organize_cabecario_mobile{
+    background-color: #16205B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+  
+  .bt_min_lig_mobile{
+    justify-content: center;
+    margin: 0 auto; 
+  }
+  
+  .bt_minha_lig_mobile button{
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 22px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    text-align: center;
+    width: 12vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 1%; */
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 5px;
+    box-shadow: none
+    
+  }
+  
+  .icon_bt_mobile{
+    width: 18px;
+    height: auto;
+    fill: #16205b;
+    
+  }
+  
+  .btn_abrir_menu{
+  right: 10px;
+  top: 10px;
+    position: absolute;
+  }
+  
+  
+  .org_cabeçario_mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 60vh; */
+    /* gap: 2vh; */
+  }
+  
+  /* ---- menu ------ */
+    .CABEÇARIO{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  
+     
+      
+    }
+  
+    .CABEÇARIO h3{
+      color: #ffffff;
+      font-size: 3vh;
+    }
+  
+    .organize_cabecario{
+      background-color: #16205B;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #logo_top{
+      width: 220px;
+      margin-top: 10px;
+    }
+  
+    .icon_bt{
+      width: 20px;
+      height: auto;
+      fill: #16205b;
+    }
+  
+    .org_icon{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+  
+    }
+  
+  .organize_botoes_menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+    .bt_minha_lig button{
+      align-items: center;
+      padding: 8px 10px;
+      border-radius: 22px;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      text-align: center;
+      width: 120px;
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      gap: 1%;
+      font-weight: bold;
+      color: #16205b;
+      box-shadow: none;
+    }
+  
+    .menu{
+      display: flex;
+      justify-content: flex-end;
+      gap: 8%;
+      list-style-type: none;
+      font-size: 1.1vw;
+      white-space: nowrap;
+      align-items: center;
+    }
+  
+    .menu ul{
+      padding: 0px 0px;
+    }
+  
+    .menu a{
+      color: #ffffff;
+      font-weight: bold;
+      
+    }
+    .menu li{
+      width: 100%;
+    }
+  
+
+  
+  /* ---------------------------- Trabalhe conosco ------------------------- */
+  
+  .tbr-corpo{
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #cardContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 999;  
+  }
+  
+  .card-tbr {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-tbr h2 {
+    margin-bottom: 10px;
+    color: #020024;
+    font-size: 2.8vh;
+  }
+  
+  .tbr_imp label {
+    display: block;
+    margin-top: 6px;
+    font-weight: bold;
+    color: #020024;
+    font-size: 2vh;
+  }
+  
+  .tbr_imp > input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button#submitBtn {
+    margin-top: 10px;
+    padding: 6px;
+    background-color: #020024;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 80px;  
+  }
+  
+  button#submitBtn:hover {
+    background-color: #b3c233;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #333;
+  }
+
+  /* ------------- Botao whatsapp ------- */
+
+.Botao_whtt{
+  position: fixed;
+  border-radius: 100%;
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* --------------------------------------------------- */
 
   .CABEÇARIO{
@@ -219,11 +561,7 @@ button#submitBtn:hover {
   color: #333;
 }
 
-  /* ------------------slider--------------------------------- */
 
-
-
-  /* -----------------------planos-------------------------------- */
 
  
 
@@ -856,184 +1194,45 @@ a {
 
 
 
-.plan-card {
-
-  width: 95%;
-  height: auto;
-
-
-}
-
-.plan-info {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 90%;
-}
-
-.organize_premiun{
-  gap: 5px;
-}
-
-.post_litv{
-  background-image: url("LIG - SITE/teste/fundo_mobile_ligTV.png");
-  width: 100%;
-  height: 584px;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-size: cover;
-    background-position: center; 
+.organize_cabecario{
+  display: none;
 }
 
 
-.organize_ligTv{
-margin-top: 25px;
-  align-items: center;
-  width: 90%;
-  height: auto;
-  text-align: center;
-  justify-content: flex-start;
 
-}
-
-.organize_ligTv h3 {
-  margin-top: 20px;
-  width: 90%;
-  font-size: 22px;
-}
-
-.organize_ligTv button{
-  width: 160px;
-  
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
- 
-  margin-top: 5px;
-}
-
-.org_bt_ligTV{
-  flex-direction: row;
-  gap: 5px;
- 
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.logo_lig_tv{
-  width: 90px;
-  
-}
-
-/* ---------fale conosco------- */
- .post_contato{
- 
-  height: 550px;
-
-}
-.organize_Contato{
-
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-width: 95%;
-}
- 
-.logo_contato{
-  width: 268px;
-}
-
-.post_contato h3{
-  width: 95%;
-  text-align: center;
-  font-size: 20px;
-  
-}
-
-.organize_Contato button{
-   width: 300px;
-  font-size: 26px;
-  justify-content: center;
-  margin:  20px auto;
-}
-
-#icon_wtz_contato{
-width: 60px;
-} 
-
-/* --------serviços -------------- */
-
-.img_serviçoss{
-  width: 100%;
-  
-}
-
-.post_serviços h3{
-  width: 95%;
-  margin-bottom: 20px;
-  align-items: left;
-  padding: 10px;
-}
-
-/*  ----------------------  minha lig -------------- */
-
-.post_minhalig{
-  background-image: none;
-  background-color: #161E5C;
-  height: 750px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.organize_minhalig{
-  display: flex;
-  flex-direction: column;
-  justify-content:  space-around;
-  align-items: center;
-  width: 100%;
-  height: auto;
-
-}
-
-.organize_minhalig h3 {
-  margin-top: 20px;
-  width: 95%;
-  color: white;
-  margin-top: 30px;
-}
-
-.organize_minhalig button{
-  margin-top: 10px;
-}
-
-.mobile_fundo{
-  margin-top:  40px;
+.organize_cabecario_mobile {
   display: block;
 }
 
-/* ---------------------- introdução ------------------------ */
-
-
-.post_apresentação {
-  display: flex;
-  /* flex-direction: r; */
-  /* gap: 50px; */
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+.logo_top {
+  height: 14vw;
 }
 
-
-.img_apresentação{
-  width: 100%;
+.icon_bt{
+  display: block;
 }
+
+.item-fixo {
+position: absolute;
+top: 90%; 
+right: 10%;
+padding: 10px;
+background-color: #030749;
+color: var(--colortitle-color);
+border-radius: 100%;
+box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+opacity: 0;
+transition: opacity 0.3s ease-in-out; 
+}
+
+.fixed {
+position: fixed;
+top: 90%; 
+right: 25%;
+opacity: 1; 
+z-index: 99;
+}
+
 
 /* ************ */
 .organize_cabecario{
@@ -1053,6 +1252,9 @@ width: 60px;
   margin: 10px auto;
 }
 
-
+.Botao_whtt{
+  right: 25px;
+  z-index: 99;
+}
 
 }
