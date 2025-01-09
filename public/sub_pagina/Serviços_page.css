@@ -229,6 +229,7 @@ top: 10px;
   justify-content: flex-end;
   flex-direction: column;
   align-items: flex-end;
+  gap: 5px;
 }
 
 .bt_minha_lig button{
