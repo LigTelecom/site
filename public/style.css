@@ -734,7 +734,7 @@ button#submitBtn:hover {
   transition: max-height 0.3s ease-in-out;
 }
 .post-content.expanded {
-  max-height: 1500px; /* Altura grande suficiente para mostrar tudo */
+  max-height: 1650px; /* Altura grande suficiente para mostrar tudo */
 }
 .gradient-overlay {
   content: "";
@@ -1049,6 +1049,10 @@ align-items: flex-end;
   color: rgb(255, 255, 255);
   margin: 30px;
   font-size: 22px;
+}
+
+#minhalig_texto_bt{
+  color: #0D2092;
 }
 
 .organize_minhalig button{
@@ -1476,7 +1480,6 @@ width: 60px;
 
 .post_minhalig{
   background-image: none;
-
   height: 750px;
   justify-content: space-between;
   align-items: flex-end;
@@ -1495,6 +1498,8 @@ width: 60px;
   height: auto;
 
 }
+
+
 
 .organize_minhalig h3 {
   margin-top: 20px;

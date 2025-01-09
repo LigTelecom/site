@@ -378,7 +378,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99;
 }
 /* --------------------------------------------------- */
 
@@ -386,8 +385,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-    
   }
 
   .CABEÇARIO h3{
@@ -702,11 +699,6 @@ text-align: center;
     color: #333;
 }
 
-.carousel-item.active {
-    /* opacity: ; */
-    /* transform: scale(1.2); Foco no item do meio */
-}
-
 .carousel-buttons {
     position: absolute;
     top: 50%;
@@ -873,10 +865,6 @@ width: 60px;
   padding: 10px;
 }
 
-.post_serviçoss{
-  img_serviçoss: 15px;
-}
-
 .img_servisos{
   width: 210px;
   height: auto;
@@ -927,8 +915,9 @@ width: 60px;
   font-size: 18px;
   text-align: left;
   justify-content: left;
-  display: ;
 }
+
+.
 
 .organize_minhalig h3 {
   margin-top: 20px;
