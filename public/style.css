@@ -628,9 +628,10 @@ button#submitBtn:hover {
   padding: 20px;
   border-radius: 10px;
   width: 90%;
-  max-height: 740px;
+  max-height: 640px;
   max-width: 600px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
 
 }
 
@@ -639,6 +640,8 @@ button#submitBtn:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+ 
+  
 }
 
 .modal-header h2 {
@@ -652,6 +655,8 @@ button#submitBtn:hover {
   font-size: 24px;
   cursor: pointer;
   box-shadow: none;
+  /* position: fixed;
+  right: 10vw; */
 }
 
 .app-grid {
