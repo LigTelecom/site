@@ -1,6 +1,6 @@
 // Seleciona os elementos do DOM
 const openFormBtn = document.getElementById("openFormBtn");
-// const openFormBtnmobi = document.getElementById("openFormBtnmobi");
+const openFormBtnmobi = document.getElementById("openFormBtnmobi");
 const cardContainer = document.getElementById("cardContainer");
 const closeCard = document.getElementById("closeCard");
 
@@ -9,9 +9,9 @@ openFormBtn.addEventListener("click", () => {
     cardContainer.style.display = "flex"; // Torna o card visível
 });
 
-// openFormBtnmobi.addEventListener("click", () => {
-//     cardContainer.style.display = "flex"; // Torna o card visível
-// });
+openFormBtnmobi.addEventListener("click", () => {
+    cardContainer.style.display = "flex"; // Torna o card visível
+});
 
 // Fecha o card ao clicar no botão de fechar (&times;)
 closeCard.addEventListener("click", () => {
