@@ -182,91 +182,108 @@
     align-items: center;
   }
   
-  /* ---- menu ------ */
+
   
-    .CABEÇARIO{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+/* ---- menu ------ */
+
+.CABEÇARIO{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.CABEÇARIO h3{
+  color: #ffffff;
+  font-size: 3vh;
+}
+
+.organize_cabecario{
+  background-color: #16205B;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#logo_top{
+  width: 220px;
+  margin-top: 10px;
+}
+
+.icon_bt{
+  width: 20px;
+  height: auto;
+  fill: #16205b;
+}
+
+.org_icon{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  overflow: visible; 
   
-    .CABEÇARIO h3{
-      color: #ffffff;
-      font-size: 3vh;
-    }
+}
+
+
+.organize_botoes_menu{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.bt_minha_lig button{
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 22px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  text-align: center;
+  width: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 1%;
+  font-weight: bold;
+  color: #16205b;
+  box-shadow: none;
+}
+
+.menu a:hover{
+ 
+  color: #ffffff; /* Azul claro que combina */
+  text-shadow: 
+    0 0 10px #4CAFEB, 
+    0 0 20px #4CAFEB, 
+    0 0 40px #4CAFEB, 
+    0 0 80px #4CAFEB;
+}
+
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  gap: 4%;
+  list-style-type: none;
+  font-size: 0.9vw;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.menu ul{
+  padding: 0px 0px;
+}
+
+.menu a{
+  color: #ffffff;
+  font-weight: bold;
   
-    .organize_cabecario{
-      background-color: #16205B;
-      height: 120px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    #logo_top{
-      width: 220px;
-      margin-top: 10px;
-    }
-  
-    .icon_bt{
-      width: 20px;
-      height: auto;
-      fill: #16205b;
-    }
-  
-    .org_icon{
-      display: flex;
-      flex-direction: row;
-      gap: 5px;
-      align-items: center;
-    }
-  
-  .organize_botoes_menu{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 5px;
-  }
-  
-  .bt_minha_lig button{
-    align-items: center;
-    padding: 8px 10px;
-    border-radius: 22px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    text-align: center;
-    width: 15vh;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    gap: 1%;
-    font-weight: bold;
-    color: #16205b;
-    box-shadow: none;
-  }
-  
-  .menu{
-    display: flex;
-    justify-content: flex-end;
-    gap: 8%;
-    list-style-type: none;
-    font-size: 1.1vw;
-    white-space: nowrap;
-  }
-  
-  .menu ul{
-    padding: 0px 0px;
-  }
-  
-  .menu a{
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
-  .menu li{
-    width: 100%;
-  }
+}
+.menu li{
+  width: 100%;
+}
+
   
   /* ---------------------------- Trabalhe conosco ------------------------- */
   
@@ -873,10 +890,15 @@ width: 60px;
   align-items: center;
 }
 
+#corp-rod{
+  display: flex;
+  justify-content: center;
+}
+
 .elemento-box_2 {
   width: 100%;
   height: fit-content;
-  min-height: 400px;
+  min-height: 200px;
   background-color: rgb(23, 10, 44);
   z-index: -1;
   justify-content: center;
@@ -887,7 +909,7 @@ width: 60px;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 6%;
+  padding: 1% 5%;
   top: 25px;
   height: auto;
   justify-content: space-between;
@@ -895,15 +917,9 @@ width: 60px;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-}
-
 .rodape n6 {
   color: white;
+  justify-content: center;
 }
 
 .rodape p {
@@ -911,6 +927,8 @@ a {
   margin-top: 15px;
   line-height: 1.2;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .endereços {
@@ -928,7 +946,6 @@ a {
 .logo-rod img {
   width: 100%;
   height: 100%;
-
 }
 
 .icon {
@@ -956,25 +973,9 @@ a {
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: start;
   font-weight: lighter;
-
-}
-
-.organize_app ul{
-  margin: 15px;
-}
-
-.organize_app li{
-  margin-top: 15px;
-}
-
-.img_org_app{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* --------- */
