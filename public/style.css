@@ -259,9 +259,18 @@ top: 10px;
     box-shadow: none;
   }
 
+  .bt_minha_lig button:hover{
+    box-shadow: 
+      0 0 10px #4CAFEB, 
+      0 0 20px #4CAFEB, 
+      0 0 40px #4CAFEB, 
+      0 0 80px #4CAFEB;
+
+  }
+
   .menu a:hover{
    
-    color: #ffffff; /* Azul claro que combina */
+    color: #ffffff;
     text-shadow: 
       0 0 10px #4CAFEB, 
       0 0 20px #4CAFEB, 

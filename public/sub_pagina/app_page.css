@@ -29,8 +29,9 @@
 
   }
 
-
-
+H2{
+  color: #16205b;
+}
   header,
   main,
   footer {
@@ -251,6 +252,15 @@
   box-shadow: none;
 }
 
+.bt_minha_lig button:hover{
+  box-shadow: 
+    0 0 10px #4CAFEB, 
+    0 0 20px #4CAFEB, 
+    0 0 40px #4CAFEB, 
+    0 0 80px #4CAFEB;
+
+}
+
 .menu a:hover{
  
   color: #ffffff; /* Azul claro que combina */
@@ -399,6 +409,10 @@
     color: white;
     font-size: 18px;
   }
+
+  .cabeçaroa_seção h2{
+    color: white;
+  }
   
   .cabeçaroa_seção ul{
     display: flex;
@@ -451,435 +465,18 @@
 .app-item img {
   max-width: 60px;
   transform: 2s;
-  /* margin-bottom: 10px; */
 }
 
-.app-item:hover img{
-scale: 1px;
+ .app-item{ 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito */
+  border-radius: 10px; /* Apenas um exemplo de estilo adicional */
 }
 
-/* -------------------- */
-
-.post-container {
-  position: relative;
-  /* max-width: 600px; */
-  text-align: center;
-}
-.post-content {
-  max-height: 100px;
-  overflow: hidden;
-  position: relative;
-  transition: max-height 0.3s ease-in-out;
-}
-.post-content.expanded {
-  max-height: 1500px; /* Altura grande suficiente para mostrar tudo */
-}
-.gradient-overlay {
-  content: "";
-  position: relative;
-  margin-top: 10px;
-  padding: 10px;
-  background: linear-gradient(transparent, white);
-  font-size: 1rem;
-  color: #555;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.gradient-overlay h4 {
-  font-size: 22px;
+.app-item:hover {
+  transform: scale(1.2); /* Aumenta 20% do tamanho original */
   
 }
 
-.post-content.expanded + .gradient-overlay {
-  opacity: 0;
-}
-.toggle-button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.toggle-button:hover {
-  background-color: #0056b3;
-}
-
-/* ----------------- carosel --------------- */
-
-.carousel {
-    width: 80%;
-    max-width: 900px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 60px;
-    z-index: 1;
-}
-
-.carousel h2, .carousel h3{
-text-align: center;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.carousel-item {
-    flex: 0 0 20%; /* 5 itens visíveis */
-    /* opacity: 0.5; */
-    transform: scale(0.8);
-    transition: transform 0.3s, opacity 0.3s;
-    text-align: center;
-}
-
-.carousel-item img {
-    width: 100px;
-    height: 100px;
-}
-
-.carousel-item p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-}
-
-
-
-.carousel-buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* transform: translateY(-50%); */
-}
-
-.button {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
-}
-
-.button:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.indicator-container {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.indicator {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background: #007bff;
-}
-
-/* -----------lig tv---------- */
-.post_litv{
-  background-image: url("LIG - SITE/teste/fundp_ligTv.png");
-  width: 100vw;
-  height: 400px;
-  z-index: -1;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.organize_ligTv{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-
-}
-
-.organize_ligTv h3 {
-  margin-top: 20px;
-  width: 50%;
-  font-size: 22px;
-}
-
-.organize_ligTv button{
-  gap: 15px;
-  margin-top: 60px;
-  width: 200px;
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-weight: bolder;
-  
-}
-
-.org_bt_ligTV{
-  flex-direction: row;
-  gap: 10px;
-  display: flex;
-}
-
-.logo_lig_tv{
-  width: 110px;
-}
-
-/* ------------contato-------------- */
-
-.post_contato{
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  padding: 0px;
-  margin: 0;
-}
-.organize_Contato{
-display: flex;
-flex-direction: column;
-justify-content: left;
-align-items: flex-start;
-width: 50%;
-}
-
-.logo_contato{
-  width: 400px;
-}
-
-.post_contato h3{
-  width: 50%;
-  text-align: left;
-}
-
-.organize_Contato button{
-  /* gap: 15px; */
-  margin-top: 60px;
-  width: 400px;
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #0056b3;
-  font-size: 42px;
-  color: white;
-  font-weight: bold;
-}
-
-#icon_wtz_contato{
-width: 60px;
-}
-
-/* ------------serviços----------- */
-
-.organize_serviçoes{
-  display: flex;
-  flex-direction: row;
-  white-space: normal;
-  flex-wrap: wrap;
-}
-
-.post_serviços{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.post_serviços h3{
-  width: 69vh;
-  margin-bottom: 20px;
-  align-items: left;
-  padding: 10px;
-}
-
-.img_servisos{
-  width: 210px;
-  height: auto;
-  /* margin-bottom: 30px; */
-  margin-top: 18px;
-}
-
-.img_servisos_post{
-  width: 130vh;
-}
-
-.botao_serviço{
-  padding: 10px 15px;
-  border-radius: 15px;
-  width: 180px;
-  margin: 15px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-/* ------------------------------------minha lig --------------------*/
-
-.post_minhalig{
-  /* background-image: url("LIG - SITE/teste/fundo_minhaLig.png"); */
-  width: 100%;
-  height: 500px;
-  z-index: -1;
-  display: flex;
-  flex-direction: row;
-  margin-top: 80px;
-  padding: 50px;
-  font-size: 22px;
-}
-
-.organize_minhalig{
-  display: flex;
-  flex-direction: column;
-  justify-content:  space-around;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  margin-top: 30px;
-
-}
-
-.organize_minhalig ul{
-  color: white;
-  font-size: 18px;
-  text-align: left;
-  justify-content: left;
-
-}
-
-.organize_minhalig h3 {
-  margin-top: 20px;
-  width: 50%;
-  color: rgb(79, 49, 216);
-  margin: 30px;
-  font-size: 22px;
-}
-
-.organize_minhalig button{
-  gap: 15px;
-  margin-top: 60px;
-  width: 200px;
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-weight: bolder;
-  
-}
-
-.img_serviçoss{
-  width: 69vh;
-}
-
-.mobile_fundo{
-  display: none;
-}
-
-/* --------------- post introdução ---------------- */
-
-.post_01_introdução {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: auto;
-  margin: 60px;
-  
-  
-  align-items: center;
-  justify-content: center;
-  
-  
-}
-
-#titulo_sobrenos {
-  color: var(--colortitle-color);
-  font-size: var(--fonsztitle-font-size);
-}
-
-.post_apresentação {
-  display: flex;
-  /* flex-direction: r; */
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-}
-
-.img_apresentação {
-  height: auto;
-  width:  630px;
-  justify-content: center;
-}
-
-.bot_introdução {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
-  text-wrap: bold;
-  gap: 10px;
-  flex: 0.8;
-}
-
-.cont_apresentação {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  gap: 10px;
-  flex: 0.8;
-}
-
-.texto {
-  display: none;
-  padding: 1vh 4vh;
-  text-align: justify;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-}
-
-.bot_expancivo_intro {
-  padding: 10px 20px;
-  width: 100%;
-  background-color:  #16205b ;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  align-items: center;
-  font-size: 16px;
-  text-align: left;
-  font-weight: bold;
-}
-
-.bot_expancivo_intro:hover {
-  background-color: #020024;
-}
 
 /*---------------------rodape----------------------*/
 
