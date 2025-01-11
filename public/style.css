@@ -207,6 +207,7 @@ top: 10px;
 
   .organize_cabecario{
     background-color: #16205B;
+    /* filter: brightness(1) saturate(1.2); */
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -1256,7 +1257,7 @@ top: 10px;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 2% 5%;
+  padding: 1% 8%;
   top: 25px;
   height: auto;
   justify-content: space-between;
