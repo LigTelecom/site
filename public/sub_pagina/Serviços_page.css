@@ -434,7 +434,7 @@ button#submitBtn:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 12px auto;
+  margin: 50px auto;
   max-width: 1600px;
 }
 
