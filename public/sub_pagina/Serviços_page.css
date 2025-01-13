@@ -532,6 +532,15 @@ button#submitBtn:hover {
   gap: 20px;
 }
 
+.org_acessos_apps button:hover{
+  box-shadow: 
+      0 0 10px rgba(150, 51, 255, 0.8), 
+      0 0 20px rgba(150, 51, 255, 0.6), 
+      0 0 40px rgba(150, 51, 255, 0.4), 
+      0 0 80px rgba(150, 51, 255, 0.2);
+
+}
+
 .elemento_linha{
   width: 2px;
   height: 80px;
@@ -544,6 +553,12 @@ button#submitBtn:hover {
   padding: 10px 20px;
   border: none;
   margin: 20px;
+  color: rgba(150, 51, 255);
+  font-weight: bold;
+  /* justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row; */
 }
 
 .logo-serviço{
@@ -645,6 +660,24 @@ button#submitBtn:hover {
   align-items: center;
   justify-content: start;
   font-weight: lighter;
+}
+
+#button_lig_cam{
+  color: var(--colortitle-color);
+}
+
+#button_lig_cam button{
+  color: rgb(255, 130, 28)
+}
+
+#button_lig_cam button:hover{
+  color: rgb(255, 130, 28);
+  box-shadow: 
+  0 0 10px rgba(255, 130, 28, 0.8), 
+  0 0 20px rgba(255, 130, 28, 0.6), 
+  0 0 40px rgba(255, 130, 28, 0.4), 
+  0 0 80px rgba(255, 130, 28, 0.2);
+
 }
 
 
