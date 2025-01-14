@@ -44,6 +44,11 @@
     color: #16205b;
   }
 
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
 /* ----------------------------menu mobile ------------------------- */
 
 .menu_mobile{
@@ -443,6 +448,7 @@ top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 }
 
 
@@ -459,7 +465,7 @@ top: 10px;
 
   .slider {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     /* height: 100%; */
     overflow: hidden;
   }
@@ -471,7 +477,7 @@ top: 10px;
   }
 
   .slides img {
-    width: 100%;
+    width: 100vw;
     /* height: 100%; */
     object-fit: cover;
   }
@@ -1362,7 +1368,7 @@ top: 10px;
 
 /* ------------------------------------------------------- */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
 
   .flex {
     flex-direction: column;
@@ -1622,7 +1628,7 @@ width: 60px;
 
 .Botao_whtt{
   right: 25px;
-  z-index: 99;
+  z-index: 999;
 }
 
 }
