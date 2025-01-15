@@ -24,3 +24,6 @@ cardContainer.addEventListener("click", (event) => {
         cardContainer.style.display = "none"; // Esconde o card
     }
 });
+
+
+
