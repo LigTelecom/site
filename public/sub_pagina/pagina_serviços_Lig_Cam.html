@@ -209,42 +209,58 @@
 
       </div>
 
-      <!-- Trabalhe conosco -->
-      <div id="cardContainer">
-        <div class="card-tbr">
-          <span id="closeCard" class="close-btn">&times;</span>
-          <h2>Trabalhe Conosco</h2>
-          <form class="tbr_imp" id="jobForm" method="POST" action="/send-email" enctype="multipart/form-data">
-            <label for="name">NOME</label>
-            <input type="text" name="name" id="formInputName" placeholder="Digite seu nome" required>
+ 
+        <!-- Trabalhe conosco -->
+        <div id="cardContainer">
+          <div class="card-tbr">
+              <span id="closeCard" class="close-btn">&times;</span>
+              <h2>Trabalhe Conosco</h2>
+              <form class="tbr_imp" id="jobForm" method="POST" action="/send-email" enctype="application/x-www-form-urlencoded">
+                  <label for="name">NOME</label>
+                  <input type="text" name="name" id="formInputName" placeholder="Digite seu nome" required>
 
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="formInputEmail" placeholder="Digite seu email" required>
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="formInputEmail" placeholder="Digite seu email" required>
 
-            <label for="phone">TELEFONE</label>
-            <input type="tel" name="phone" id="formInputPhone" placeholder="Digite seu telefone" required>
+                  <label for="phone">TELEFONE</label>
+                  <input type="tel" name="phone" id="formInputPhone" placeholder="Digite seu telefone" required>
 
-            <label for="resume">CURRÍCULO</label>
-            <input type="file" name="resume" id="formInputResume" accept=".pdf,.doc,.docx" required>
+                  <label for="interest">ÁREA DE INTERESSE</label>
+                  <select name="interest" id="formInputInterest" required>
+                      <option value="Comercial">Comercial</option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="Desenvolvimento">Desenvolvimento</option>
+                      <option value="Financeiro">Financeiro</option>
+                      <option value="Tecnico de redes">Técnico de Redes</option>
+                  </select>
+                  <div id="OUTRAS_INFOR">
+                      <div>
+                          <label for="habilitação">HABILITAÇÂO</label>
+                          <select name="habilit" id="formInputhabilit" required>
+                              <option value="Não possuo">Não possuo</option>
+                              <option value="A & B">A & B</option>
+                              <option value="A">A</option>
+                              <option value="B">B</option>
+                          </select>
+                      </div>
+                      <div>
+                          <label for="escolaridade">ESCOLARIDADE</label>
+                          <select name="escolarid" id="formInputescolarid" required>
+                              <option value="Ensino básico">Ensino básico</option>
+                              <option value="Ensino médio">Ensino médio</option>
+                              <option value="Cursando ensino superior">Cursando ensino superior</option>
+                              <option value="Ensino superior">Ensino superior</option>
+                          </select>
+                      </div>
+                  </div>
+                  <label for="message">FALE UM POUCO DE VOCÊ E DESUAS EXPERIENCIAS</label>
+                  <textarea name="message" id="formInputMessage" rows="5"
+                      placeholder="Digite sua mensagem"></textarea>
 
-            <label for="interest">ÁREA DE INTERESSE</label>
-            <select name="interest" id="formInputInterest" required>
-              <option value="Comercial">Comercial</option>
-              <option value="Marketing">Marketing</option>
-              <option value="Desenvolvimento">Desenvolvimento</option>
-              <option value="Financeiro">Financeiro</option>
-              <option value="Tecnico de redes">Técnico de Redes</option>
-            </select>
 
-            <label for="message">MENSAGEM</label>
-            <textarea name="message" id="formInputMessage" rows="5" placeholder="Digite sua mensagem"></textarea>
-
-            <!-- <label for="captcha">What is 1 × 7?</label>
-  <input type="number" name="captcha" id="formInputCaptcha" placeholder="Digite sua resposta" required>
--->
-            <button type="submit" id="submitBtn">ENVIAR</button>
-          </form>
-        </div>
+                  <button type="submit" id="submitBtn">ENVIAR</button>
+              </form>
+          </div>
       </div>
 
       <div class="Botao_whtt">

@@ -306,6 +306,7 @@ top: 10px;
   height: 100vh;
 }
 
+
 #cardContainer {
   position: fixed;
   top: 0;
@@ -323,12 +324,22 @@ top: 10px;
   background-color: #fff;
   width: 90%;
   max-width: 500px;
+  max-height: 550PX;
   padding: 20px;
   /* padding-top: 40px;
   padding-bottom: 40px; */
   border-radius: 10px;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 0px solid #ccc;
+    overflow-y: auto; /* Ativa a barra de rolagem vertical */
+    
+}
+
+#OUTRAS_INFOR{
+  display: flex;
+  flex-direction: row;
+  gap: 30PX;
 }
 
 .card-tbr h2 {

@@ -304,7 +304,8 @@ H2{
     align-items: center;
     height: 100vh;
   }
-  
+
+
   #cardContainer {
     position: fixed;
     top: 0;
@@ -317,25 +318,35 @@ H2{
     align-items: center;
     z-index: 999;  
   }
-  
+
   .card-tbr {
     background-color: #fff;
     width: 90%;
     max-width: 500px;
+    max-height: 550PX;
     padding: 20px;
     /* padding-top: 40px;
     padding-bottom: 40px; */
     border-radius: 10px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 0px solid #ccc;
+      overflow-y: auto; /* Ativa a barra de rolagem vertical */
+      
   }
-  
+
+  #OUTRAS_INFOR{
+    display: flex;
+    flex-direction: row;
+    gap: 30PX;
+  }
+
   .card-tbr h2 {
     margin-bottom: 10px;
     color: #020024;
     font-size: 2.8vh;
   }
-  
+
   .tbr_imp label {
     display: block;
     margin-top: 6px;
@@ -343,7 +354,7 @@ H2{
     color: #020024;
     font-size: 2vh;
   }
-  
+
   .tbr_imp > input, textarea, select {
     width: 100%;
     padding: 8px;
@@ -351,7 +362,7 @@ H2{
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+
   button#submitBtn {
     margin-top: 10px;
     padding: 6px;
@@ -363,11 +374,11 @@ H2{
     border-radius: 15px;
     width: 80px;  
   }
-  
+
   button#submitBtn:hover {
     background-color: #b3c233;
   }
-  
+
   .close-btn {
     position: absolute;
     top: 10px;
@@ -376,7 +387,7 @@ H2{
     color: #aaa;
     cursor: pointer;
   }
-  
+
   .close-btn:hover {
     color: #333;
   }
