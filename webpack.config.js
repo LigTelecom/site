@@ -1,30 +1,13 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpackNodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  mode: 'production', // ou 'development' dependendo do ambiente
-  entry: './server.js', // Entrada do seu código
-  output: {
-    path: path.resolve(__dirname, 'dist'), // Diretório de saída
-    filename: 'bundle.js',
-  },
-  resolve: {
-    fallback: {
-      path: false, // Configura o polyfill para o módulo 'url'
-      buffer: require.resolve('buffer/')
+    target: 'node', // Define o alvo como Node.js
+    entry: './src/server.js', // Entrada do seu código Node.js
+    output: {
+        filename: 'bundle.js', // Nome do arquivo de saída
+        path: path.resolve(__dirname, 'dist'), // Diretório de saída
     },
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/, // Carregar arquivos CSS
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html', // Arquivo HTML base
-    }),
-  ],
+    externals: [webpackNodeExternals()], // Exclui módulos node_modules do bundle
+    mode: 'production', // Modo de produção
 };
